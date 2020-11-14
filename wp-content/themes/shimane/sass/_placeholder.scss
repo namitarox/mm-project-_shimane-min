@@ -1,0 +1,112 @@
+%container {
+	@include pie-clearfix;
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+}
+
+%box {
+	background: #fff;
+	@include box-shadow(0px 5px 4px 0px rgba(0, 0, 0, 0.40));
+}
+
+%navi-circle {
+	color: #333;
+	text-decoration: none;
+	position: relative;
+	padding-left: 1.1em;
+
+	&:before {
+		content: "●";
+		position: absolute;
+		left: 0;
+		top: 3px;
+		color: #038700;
+	}
+}
+
+%button {
+	@include inline-block();
+	@include box-sizing(border-box);
+	background: #038700;
+	text-align: center;
+	font-weight: normal;
+	padding: 8px 40px 6px;
+	color: #fff !important;
+	@include border-radius(5px);
+	text-decoration: none !important;
+
+	&.-large {
+		padding: 10px 50px 8px;
+	}
+
+	&.-small {
+		padding: 5px 20px 4px;
+	}
+
+	&.-doctor {
+		background: #009fed;
+	}
+
+	&.-narse {
+		background: #ff9797;
+	}
+
+	&:hover {
+		@include opacity(0.7);
+	}
+}
+
+%table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+
+	tr {
+		th {
+			text-align: left;
+			font-weight: normal;
+			background: #f2f0ec;
+			padding: 10px 14px;
+			border: 1px solid #ccc;
+			vertical-align: top;
+		}
+
+		td {
+			border: 1px solid #ccc;
+			padding: 10px 14px;
+			vertical-align: top;
+		}
+	}
+
+	&.-th-middle {
+		th {
+			vertical-align: middle;
+		}
+	}
+
+	&.-td-middle {
+		td {
+			vertical-align: middle;
+		}
+	}
+
+	&.-th-center {
+		th {
+			text-align: center;
+		}
+	}
+
+	&.-td-center {
+		td {
+			text-align: center;
+		}
+	}
+
+	&.-compact {
+		th, td {
+			padding: 8px 4px;
+			line-height: 1.4;
+		}
+	}
+}

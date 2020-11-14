@@ -1,0 +1,12 @@
+wp-content/themes/twentyfifteen
+wp-content/themes/twentyseventeen
+wp-content/themes/twentysixteen
+wp-content/plugins/akismet
+wp-content/plugins/hello.php
+wp-content/plugins/index.php
+wp-content/index.php
+wp-content/themes/index.php
+wp-content/themes/mytheme/assets/js
+wp-content/themes/mytheme/assets/css
+node_modules
+package-lock.json

@@ -1,0 +1,17 @@
+{
+  "extends": ["eslint:recommended"],
+  "plugins": [],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "$": true
+  },
+  "rules": {
+    "no-console": "off",
+  }
+}
