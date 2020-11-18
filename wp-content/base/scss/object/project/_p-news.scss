@@ -40,6 +40,10 @@
     width: 120px;
   }
 
+  &__button--single {
+    margin: 10px 0 0 auto;
+  }
+
   &__top-item {
     margin: 20px 15px 0;
   }
@@ -92,5 +96,45 @@
       display: flex;
       height: 100%;
     }
+  }
+
+  &__article {
+    line-height: 1.74;
+    margin-top: 20px;
+  }
+
+  &__sns-list {
+    border-top: 1px solid $lightGrey;
+    display: flex;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  &__sns-item {
+    border-radius: 5px;
+    margin: 0 0 0 auto;
+
+    a {
+      align-items: center;
+      color: $white;
+      display: flex;
+      font-size: 11px;
+      height: 20px;
+      justify-content: center;
+      min-width: 90px;
+      width: 100%;
+    }
+  }
+
+  &__sns-item + &__sns-item {
+    margin-left: 20px;
+  }
+
+  &__sns-item--twitter {
+    background-color: $twitterColor;
+  }
+
+  &__sns-item--facebook {
+    background-color: $facebookColor;
   }
 }
