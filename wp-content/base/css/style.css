@@ -540,6 +540,9 @@ a:active {
 .l-wrapper--dentist {
   margin: 168px auto 55px;
 }
+.l-wrapper--student {
+  margin: 168px auto 75px;
+}
 
 .l-main {
   max-width: 700px;
@@ -852,6 +855,10 @@ a:active {
   background-image: url(/wp-content/base/images/04_dentist/dentist-first-view.jpg);
   background-position: center -85px;
 }
+.p-pages-first-view--student {
+  background-image: url(/wp-content/base/images/06_high-school/high-school-first-view.jpg);
+  background-position: center -125px;
+}
 .p-pages-first-view__heading {
   font-family: Noto Serif JP;
   font-size: 30px;
@@ -873,6 +880,10 @@ a:active {
 .p-pages-first-view__heading--dentist {
   bottom: 30px;
   left: 30px;
+}
+.p-pages-first-view__heading--student {
+  left: 492px;
+  top: 45%;
 }
 
 .p-scholarship {
@@ -1206,6 +1217,33 @@ a:active {
   justify-content: center;
   margin: 40px auto 0;
   width: 100%;
+}
+
+.p-student {
+  margin-top: 40px;
+}
+.p-student__subtitle {
+  margin-top: 20px;
+}
+
+.p-student-plan {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px 0 35px 0;
+}
+.p-student-plan__button-wrap {
+  margin-top: 40px;
+}
+.p-student-plan__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 52px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 362px;
 }
 
 .c-heading--border-bottom {

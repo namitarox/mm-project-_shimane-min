@@ -18,6 +18,11 @@
     background-position: center -85px;
   }
 
+  &--student {
+    background-image: url(/wp-content/base/images/06_high-school/high-school-first-view.jpg);
+    background-position: center -125px;
+  }
+
   &__heading {
     font-family: Noto Serif JP;
     font-size: 30px;
@@ -42,5 +47,10 @@
   &__heading--dentist {
     bottom: 30px;
     left: 30px;
+  }
+
+  &__heading--student {
+    left: 492px;
+    top: 45%;
   }
 }
