@@ -549,6 +549,9 @@ a:active {
 .l-wrapper--news {
   margin: 168px auto 60px;
 }
+.l-wrapper--contact {
+  margin: 168px auto 75px;
+}
 
 .l-main {
   max-width: 700px;
@@ -1407,6 +1410,126 @@ a:active {
   height: 44px;
   justify-content: center;
   width: 100%;
+}
+
+.p-contact {
+  background-color: #fff;
+  padding: 35px 55px 55px 55px;
+}
+.p-contact__wrap {
+  margin: 0 auto;
+  max-width: 850px;
+  width: 100%;
+}
+.p-contact__text {
+  line-height: 1.74;
+  margin-top: 20px;
+}
+.p-contact__tel {
+  color: #f00;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.p-contact__tel span {
+  font-size: 12px;
+}
+.p-contact__form {
+  margin-top: 40px;
+}
+.p-contact__table {
+  width: 100%;
+}
+.p-contact__table-column {
+  height: 50px;
+}
+.p-contact__table-title {
+  background-color: #f2f0ec;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  vertical-align: middle;
+  width: 205px;
+}
+.p-contact__table-content {
+  border: 1px solid #ccc;
+  line-height: 1.74;
+  padding: 10px 15px;
+  vertical-align: middle;
+  width: calc(100% - 205px);
+}
+.p-contact__required {
+  color: #f00;
+}
+.p-contact__check-list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.p-contact__check-list--right {
+  align-items: center;
+  display: flex;
+}
+.p-contact__check-item input {
+  vertical-align: -1px;
+}
+.p-contact__check-item span {
+  margin-left: 3px;
+}
+.p-contact__check-item + .p-contact__check-item {
+  margin-left: 15px;
+}
+.p-contact__input--small {
+  border: 1px solid #ccc;
+  width: 246px;
+}
+.p-contact__input--large {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.p-contact textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.p-contact__detail {
+  margin-top: 40px;
+}
+.p-contact__detail-list {
+  margin-top: 50px;
+}
+.p-contact__detail-item {
+  line-height: 1.7;
+}
+.p-contact__detail-item + .p-contact__detail-item {
+  margin-top: 20px;
+}
+.p-contact__agree {
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+.p-contact__caution {
+  color: #f00;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+  text-align: center;
+}
+.p-contact__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.p-contact__button-wrap + .p-contact__button-wrap {
+  margin-left: 80px;
+}
+.p-contact__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 240px;
 }
 
 .c-heading--border-bottom {
