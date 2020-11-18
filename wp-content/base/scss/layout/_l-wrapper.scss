@@ -1,0 +1,19 @@
+.l-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 55px auto;
+  max-width: 980px;
+  width: 100%;
+
+  &--scholarship {
+    margin: 168px auto 55px;
+  }
+
+  &--doctor {
+    margin: 168px auto 75px;
+  }
+
+  &--dentist {
+    margin: 168px auto 55px;
+  }
+}

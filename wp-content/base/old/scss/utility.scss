@@ -1,0 +1,97 @@
+@import "compass";
+
+@mixin generate-utility-styles($size: false) {
+	$directions: top, right, bottom, left;
+
+	@if ($size != false) {
+		$size: '-' + $size;
+	} @else {
+		$size: '';
+	}
+
+	@for $i from 1 through 20 {
+		.u#{$size}-w-#{$i * 5}p {
+			width: #{$i * 5 + '%'} !important;
+		}
+	}
+
+	@for $i from 0 through 10 {
+		@if ($i >= 1) {
+			@each $direction in $directions {
+				$direction_initial: str-slice($direction, 0, 1);
+
+				.u#{$size}-m#{$direction_initial}-#{($i * 2 - 1) * 5}px {
+					margin-#{$direction}: #{($i * 2 - 1) * 5}px !important;
+				}
+
+				.u#{$size}-p#{$direction_initial}-#{($i * 2 - 1) * 5}px {
+					padding-#{$direction}: #{($i * 2 - 1) * 5}px !important;
+				}
+
+				.u#{$size}-m#{$direction_initial}-#{($i * 2) * 5}px {
+					margin-#{$direction}: #{($i * 2) * 5}px !important;
+				}
+
+				.u#{$size}-p#{$direction_initial}-#{($i * 2) * 5}px {
+					padding-#{$direction}: #{($i * 2) * 5}px !important;
+				}
+			}
+		} @else {
+			@each $direction in $directions {
+				$direction_initial: str-slice($direction, 0, 1);
+
+				.u#{$size}-m#{$direction_initial}-#{$i * 10}px {
+					margin-#{$direction}: #{$i * 10}px !important;
+				}
+
+				.u#{$size}-p#{$direction_initial}-#{$i * 10}px {
+					padding-#{$direction}: #{$i * 10}px !important;
+				}
+			}
+		}
+	}
+
+	.u#{$size}-tl {
+		text-align: left !important;
+	}
+
+	.u#{$size}-tr {
+		text-align: right !important;
+	}
+
+	.u#{$size}-tc {
+		text-align: center !important;
+	}
+
+	.u#{$size}-fl {
+		float: left !important;
+	}
+
+	.u#{$size}-fr {
+		float: right !important;
+	}
+
+	.u#{$size}-fn {
+		float: none !important;
+	}
+
+	@if ($size != '') {
+		.u#{$size}-hidden {
+			display: none !important;
+		}
+
+		.u#{$size}-block {
+			display: block !important;
+		}
+
+		.u#{$size}-inline-block {
+			display: inline-block !important;
+		}
+
+		.u#{$size}-inline {
+			display: inline !important;
+		}
+	}
+}
+
+@include generate-utility-styles();

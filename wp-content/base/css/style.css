@@ -1,0 +1,1265 @@
+@charset "UTF-8";
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*, ::before, ::after {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p, table, blockquote, address, pre, iframe, form, figure, dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  border-top-width: 1px;
+  box-sizing: content-box;
+  /* 1 */
+  clear: both;
+  color: inherit;
+  height: 0;
+  /* 1 */
+  margin: 0;
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img, embed, object, iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: inherit;
+  vertical-align: middle;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button, input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button, select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+button[disabled], [type="button"][disabled], [type="reset"][disabled], [type="submit"][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td, th {
+  padding: 0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  background-color: #f8f8ff;
+  color: #333;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", Osaka, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+a:active {
+  color: inherit;
+}
+
+.l-header {
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.l-header-top {
+  background-color: #20b97b;
+  color: #fff;
+  font-size: 14px;
+}
+.l-header-top__inner {
+  align-items: center;
+  display: flex;
+  height: 22px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+.l-header-top__links {
+  display: flex;
+}
+.l-header-top__link-item + .l-header-top__link-item {
+  margin-left: 30px;
+}
+
+.l-header-bottom__inner {
+  align-items: center;
+  display: flex;
+  height: 91px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.l-header-bottom__logo {
+  width: 294px;
+}
+.l-header-bottom__nav-list {
+  align-items: center;
+  display: flex;
+  height: 47px;
+}
+.l-header-bottom__nav-item a {
+  align-items: center;
+  border-radius: 5px;
+  color: #20b97b;
+  display: flex;
+  height: 47px;
+  justify-content: center;
+  width: 160px;
+}
+.l-header-bottom__nav-item a:hover {
+  background-color: #20b97b;
+  color: #fff;
+}
+.l-header-bottom__nav-item + .l-header-bottom__nav-item {
+  border-left: 1px solid #999;
+}
+
+.l-first-view {
+  background-image: url(./../../images/01_top_page/トップページファーストビュー.jpg);
+  background-size: cover;
+  height: 720px;
+}
+.l-first-view__catch-copy {
+  font-size: 28px;
+  left: 40px;
+  letter-spacing: 0.05em;
+  line-height: 1.36;
+  position: absolute;
+  top: 193px;
+}
+
+.l-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 55px auto;
+  max-width: 980px;
+  width: 100%;
+}
+.l-wrapper--scholarship {
+  margin: 168px auto 55px;
+}
+.l-wrapper--doctor {
+  margin: 168px auto 75px;
+}
+.l-wrapper--dentist {
+  margin: 168px auto 55px;
+}
+
+.l-main {
+  max-width: 700px;
+  width: 100%;
+}
+.l-main--individual-page {
+  max-width: 980px;
+  width: 100%;
+}
+.l-main--scholarship {
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.l-sidebar {
+  height: fit-content;
+  max-width: 260px;
+  width: 100%;
+}
+
+.l-footer {
+  background-color: #20b97b;
+  padding: 40px 0;
+}
+.l-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+.l-footer__box {
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 292px;
+}
+.l-footer__text-box {
+  padding: 10px 10px 0;
+}
+.l-footer__text-box address {
+  font-size: 14px;
+  line-height: 1.38;
+}
+.l-footer__text-box + .l-footer__text-box {
+  border-top: 1px solid #999;
+  margin-top: 10px;
+}
+.l-footer__telephone {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+.l-footer__nav-area {
+  color: #fff;
+  margin-left: 25px;
+  position: relative;
+  width: calc(100% - 292px);
+}
+.l-footer__nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.l-footer__nav-list {
+  line-height: 1.5;
+}
+.l-footer__nav-item {
+  font-size: 12px;
+  max-width: 126px;
+}
+.l-footer__nav-item a:hover {
+  text-decoration: underline;
+}
+.l-footer__bottom-contents {
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+.l-footer__copyright {
+  font-size: 12px;
+}
+.l-footer__sns-links {
+  display: flex;
+  justify-content: space-between;
+  width: 126px;
+}
+.l-footer__sns-icon {
+  font-size: 22px;
+}
+.l-footer__sns-icon + .l-footer__sns-icon {
+  margin-left: 30px;
+}
+
+.p-news {
+  background-color: #fff;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  padding: 35px 15px 15px 15px;
+  width: 100%;
+}
+.p-news--individual-page {
+  margin-top: 20px;
+}
+.p-news__heading-area {
+  align-items: center;
+  border-bottom: 2px solid #20b97b;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.p-news__heading {
+  color: #20b97b;
+  font-size: 26px;
+}
+.p-news__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 176px;
+}
+.p-news__top-item {
+  margin: 20px 15px 0;
+}
+.p-news__top-inner {
+  display: flex;
+}
+.p-news__top-img {
+  background-color: #c4c4c4;
+  height: 157px;
+  min-width: 312px;
+  width: 100%;
+}
+.p-news__top-text {
+  font-size: 13px;
+  line-height: 1.83;
+  margin-left: 64px;
+  padding-top: 20px;
+}
+.p-news__list {
+  margin-top: 20px;
+}
+.p-news__item {
+  align-items: center;
+  border-top: 1px solid #ccc;
+  display: flex;
+  height: 60px;
+}
+.p-news__item-title {
+  height: 100%;
+  margin-left: 40px;
+  width: 100%;
+}
+.p-news__item-title a {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.p-about {
+  background-color: #fff;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  margin: 20px 0 0 0;
+  padding: 30px 15px 15px 15px;
+}
+.p-about__description {
+  line-height: 1.63;
+  margin-top: 20px;
+}
+
+.p-platform {
+  margin: 20px 0 0 0;
+}
+.p-platform__textarea {
+  background-color: #f8f8ff;
+  border: 0.3px solid #d2d2d2;
+  border-radius: 10px;
+  line-height: 1.74;
+  margin-top: 10px;
+  padding: 9px;
+}
+
+.p-summary {
+  margin-top: 30px;
+}
+.p-summary--scholarship {
+  margin: 25px 10px 0;
+}
+.p-summary__table {
+  line-height: 1.74;
+  margin-top: 20px;
+  width: 100%;
+}
+.p-summary__table-title {
+  background-color: #f2f0ec;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 20%;
+}
+.p-summary__table-title--scholarship {
+  background-color: #f2f0ec;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: center;
+  width: 15%;
+}
+.p-summary__table-content {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 80%;
+}
+.p-summary__table-content--scholarship {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 85%;
+}
+.p-summary__map + .p-summary__map {
+  margin-top: 20px;
+}
+.p-summary__text {
+  margin-top: 20px;
+}
+.p-summary iframe {
+  border: 0;
+  height: 186px;
+  width: 100%;
+}
+.p-summary__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 208px;
+}
+.p-summary__button--wide {
+  width: 336px;
+}
+
+.p-office {
+  margin-top: 40px;
+}
+.p-office__text {
+  margin-top: 20px;
+}
+.p-office__table {
+  margin-top: 20px;
+}
+.p-office__table + .p-office__table {
+  margin-top: 50px;
+}
+.p-office__img {
+  height: 172px;
+}
+.p-office__img img {
+  height: 100%;
+}
+.p-office__list {
+  margin-top: 20px;
+}
+.p-office__item-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.8fr 1fr;
+  line-height: 1.74;
+}
+
+.p-facebook {
+  background-color: #fff;
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  width: 100%;
+}
+
+.p-line {
+  background-color: #fff;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  padding: 15px;
+}
+.p-line__qr-code {
+  border: 1px solid #20b97b;
+  margin: 0 auto;
+  width: 230px;
+}
+.p-line__text {
+  line-height: 1.74;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.p-pages-first-view {
+  background-size: cover;
+  height: 372px;
+  position: relative;
+}
+.p-pages-first-view--scholarship {
+  background-image: url(./../../../images/02_scholarship/奨学金\　ファーストビュー.jpg);
+  background-position: center -75px;
+}
+.p-pages-first-view--doctor {
+  background-image: url(./../../../images/03_医師・医学生ページ/医師・医学生ファーストビュー.jpg);
+  background-position: center -5px;
+}
+.p-pages-first-view--dentist {
+  background-image: url(./../../../images/04_歯科医・歯科学生のページ/歯科・歯学生\　ファーストビュー.jpg);
+  background-position: center -85px;
+}
+.p-pages-first-view__heading {
+  font-family: Noto Serif JP;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.43;
+  position: absolute;
+}
+.p-pages-first-view__heading--scholarship {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.p-pages-first-view__heading--doctor {
+  left: 30px;
+  top: 50px;
+}
+.p-pages-first-view__heading--dentist {
+  bottom: 30px;
+  left: 30px;
+}
+
+.p-scholarship {
+  background-color: #fff;
+  padding: 30px 20px;
+}
+
+.p-scholarship-lead {
+  margin-top: 30px;
+}
+.p-scholarship-lead__img {
+  height: 250px;
+  margin: 0 auto;
+  width: 906px;
+}
+.p-scholarship-lead__img img {
+  height: 100%;
+}
+.p-scholarship-lead__text {
+  line-height: 1.63;
+  margin: 20px 20px 0;
+}
+
+.p-faq {
+  margin: 35px 10px 0;
+}
+.p-faq__list {
+  margin: 20px auto 0;
+  max-width: 870px;
+  width: 100%;
+}
+.p-faq__list-item {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.p-faq__list-item + .p-faq__list-item {
+  margin-top: 45px;
+}
+.p-faq__question {
+  color: #20b97b;
+  font-weight: 600;
+}
+
+.p-scholarship-flow {
+  margin: 35px 10px 0;
+}
+.p-scholarship-flow__box {
+  background-color: #f8f8ff;
+  margin-top: 15px;
+  max-width: 905px;
+  padding: 25px 20px 10px;
+  width: 100%;
+}
+.p-scholarship-flow__grid {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 845px;
+  width: 100%;
+}
+.p-scholarship-flow__grid-item {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 7px;
+  color: #fff;
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  line-height: 1.5;
+  min-width: 106px;
+  padding: 10px 10px;
+}
+.p-scholarship-flow__arrow {
+  font-size: 27px;
+  padding: 0 0 0 16px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.p-scholarship-flow__arrow::before {
+  border: 12px solid transparent;
+  border-left: 18px solid #20b97b;
+  box-sizing: border-box;
+  height: 24px;
+  left: 24px;
+  width: 24px;
+}
+.p-scholarship-flow__arrow::before, .p-scholarship-flow__arrow::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+}
+.p-scholarship-flow__caution {
+  line-height: 1.75;
+  margin-top: 15px;
+}
+
+.p-scholarship-detail {
+  margin: 35px 10px 0;
+}
+.p-scholarship-detail__text {
+  line-height: 1.74;
+  margin-top: 20px;
+}
+.p-scholarship-detail__button-wrap {
+  margin: 20px 70px 0 0;
+}
+.p-scholarship-detail__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  width: 287px;
+}
+.p-scholarship-detail__button--wide {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 362px;
+}
+.p-scholarship-detail__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 65px auto 0;
+  max-width: 780px;
+  width: 100%;
+}
+
+.p-doctor {
+  background-color: #fff;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  padding: 30px 20px 50px;
+}
+
+.p-training__text {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.p-training__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  width: 70%;
+}
+.p-training__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 287px;
+}
+
+.p-hospital-tour {
+  margin-top: 40px;
+}
+.p-hospital-tour__subtitle {
+  font-size: 22px;
+  margin-top: 20px;
+}
+.p-hospital-tour__text {
+  line-height: 1.63;
+  margin-top: 20px;
+}
+
+.p-hospital-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 840px;
+  width: 100%;
+}
+.p-hospital-list__item {
+  width: 240px;
+}
+.p-hospital-list__item:not(:nth-of-type(3n + 1)) {
+  margin-left: 60px;
+}
+.p-hospital-list__item:nth-of-type(n + 4) {
+  margin-top: 40px;
+}
+.p-hospital-list__text {
+  line-height: 1.73;
+  margin-top: 10px;
+}
+.p-hospital-list__button-wrap {
+  margin-top: 10px;
+}
+.p-hospital-list__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  width: 100%;
+}
+.p-hospital-list__button--disabled {
+  background-color: #999;
+  pointer-events: none;
+}
+
+.p-planning {
+  margin-top: 30px;
+}
+.p-planning__text {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.p-support-center {
+  margin-top: 40px;
+}
+.p-support-center__text {
+  line-height: 1.73;
+  margin-top: 25px;
+}
+.p-support-center__banner-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  max-width: 936px;
+  width: 100%;
+}
+.p-support-center__banner {
+  align-items: center;
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  width: 220px;
+}
+
+.p-dentist-recruit {
+  background-color: #fff;
+  padding: 30px 20px 55px;
+}
+.p-dentist-recruit__contents {
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-recruit__target-list {
+  margin-top: 20px;
+}
+.p-dentist-recruit__target-item {
+  line-height: 1.74;
+}
+.p-dentist-recruit__place {
+  line-height: 1.74;
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-recruit__conditions {
+  line-height: 1.74;
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-recruit__grid {
+  display: flex;
+}
+.p-dentist-recruit__grid p + p {
+  margin-left: 40px;
+}
+.p-dentist-recruit__button-wrap {
+  margin-top: 20px;
+}
+.p-dentist-recruit__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 365px;
+}
+
+.p-dentist-scholarship {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px 20px 55px;
+}
+.p-dentist-scholarship__contents {
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-scholarship__purpose {
+  line-height: 1.63;
+  margin-top: 20px;
+}
+.p-dentist-scholarship__amount {
+  line-height: 1.74;
+  margin-top: 20px;
+}
+.p-dentist-scholarship__caution {
+  margin-top: 20px;
+}
+.p-dentist-scholarship__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 365px;
+}
+.p-dentist-scholarship__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 0;
+  width: 100%;
+}
+
+.c-heading--border-bottom {
+  border-bottom: 2px solid #20b97b;
+  color: #20b97b;
+  font-size: 26px;
+  line-height: 1.4;
+  padding-bottom: 25px;
+}
+.c-heading--border-left {
+  align-items: center;
+  border-left: 4px solid #20b97b;
+  display: flex;
+  font-size: 20px;
+  height: 48px;
+  padding-left: 15px;
+}
+
+.c-box--shadow {
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.u-text-align--right {
+  text-align: right;
+}
+
+.u-mt--10 {
+  margin-top: 10px;
+}
+.u-mt--20 {
+  margin-top: 20px;
+}
+.u-mt--30 {
+  margin-top: 30px;
+}
+.u-mt--40 {
+  margin-top: 40px;
+}
+
+.u-ml--5 {
+  margin-left: 5px;
+}
+.u-ml--12 {
+  margin-left: 12px;
+}
+.u-ml--56 {
+  margin-left: 56px;
+}
+
+.u-mb--20 {
+  margin-bottom: 20px;
+}
+
+.u-font--bold {
+  font-weight: 600;
+}
+.u-font--small {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

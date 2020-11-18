@@ -1,0 +1,33 @@
+.p-office {
+  margin-top: 40px;
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__table {
+    margin-top: 20px;
+  }
+
+  &__table + &__table {
+    margin-top: 50px;
+  }
+
+  &__img {
+    height: 172px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__item-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.8fr 1fr;
+    line-height: 1.74;
+  }
+}

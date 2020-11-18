@@ -1,0 +1,14 @@
+.l-first-view {
+  background-image: url(./../../images/01_top_page/トップページファーストビュー.jpg);
+  background-size: cover;
+  height: 720px;
+
+  &__catch-copy {
+    font-size: 28px;
+    left: 40px;
+    letter-spacing: 0.05em;
+    line-height: 1.36;
+    position: absolute;
+    top: 193px;
+  }
+}

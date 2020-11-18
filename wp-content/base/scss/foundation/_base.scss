@@ -1,0 +1,28 @@
+body {
+  background-color: $purple;
+  color: #333;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3",
+  "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", Osaka, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+img {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: inherit;
+  }
+}
