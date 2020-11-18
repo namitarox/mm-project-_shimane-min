@@ -428,7 +428,7 @@ body {
 }
 
 img {
-  height: auto;
+  height: 100%;
   vertical-align: middle;
   width: 100%;
 }
@@ -510,7 +510,8 @@ a:active {
 }
 
 .l-first-view {
-  background-image: url(./../../images/01_top_page/トップページファーストビュー.jpg);
+  background-image: url(/wp-content/base/images/01_top_page/top-page-first-view.jpg);
+  background-position: center center;
   background-size: cover;
   height: 720px;
 }
@@ -840,15 +841,15 @@ a:active {
   position: relative;
 }
 .p-pages-first-view--scholarship {
-  background-image: url(./../../../images/02_scholarship/奨学金\　ファーストビュー.jpg);
+  background-image: url(/wp-content/base/images/02_scholarship/scholarship-first-view.jpg);
   background-position: center -75px;
 }
 .p-pages-first-view--doctor {
-  background-image: url(./../../../images/03_医師・医学生ページ/医師・医学生ファーストビュー.jpg);
+  background-image: url(/wp-content/base/images/03_doctor/doctor-first-view.jpg);
   background-position: center -5px;
 }
 .p-pages-first-view--dentist {
-  background-image: url(./../../../images/04_歯科医・歯科学生のページ/歯科・歯学生\　ファーストビュー.jpg);
+  background-image: url(/wp-content/base/images/04_dentist/dentist-first-view.jpg);
   background-position: center -85px;
 }
 .p-pages-first-view__heading {
@@ -1068,6 +1069,9 @@ a:active {
 }
 .p-hospital-list__item:nth-of-type(n + 4) {
   margin-top: 40px;
+}
+.p-hospital-list__img {
+  height: 178px;
 }
 .p-hospital-list__text {
   line-height: 1.73;
