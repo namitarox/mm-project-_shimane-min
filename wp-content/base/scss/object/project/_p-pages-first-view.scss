@@ -23,6 +23,14 @@
     background-position: center -125px;
   }
 
+  &--nurse {
+    background-image: url(/wp-content/base/images/05_nurse/nurse-first-view.jpg);
+    background-position: center center;
+    margin: 168px auto 0;
+    max-width: 980px;
+    width: 100%;
+  }
+
   &__heading {
     font-family: Noto Serif JP;
     font-size: 30px;
@@ -52,5 +60,11 @@
   &__heading--student {
     left: 492px;
     top: 45%;
+  }
+
+  &__heading--nurse {
+    bottom: 10px;
+    right: 0;
+    text-align: right;
   }
 }

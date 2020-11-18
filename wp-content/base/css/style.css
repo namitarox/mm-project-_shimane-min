@@ -543,6 +543,9 @@ a:active {
 .l-wrapper--student {
   margin: 168px auto 75px;
 }
+.l-wrapper--nurse {
+  margin: 20px auto 55px;
+}
 .l-wrapper--news {
   margin: 168px auto 60px;
 }
@@ -876,6 +879,13 @@ a:active {
   background-image: url(/wp-content/base/images/06_high-school/high-school-first-view.jpg);
   background-position: center -125px;
 }
+.p-pages-first-view--nurse {
+  background-image: url(/wp-content/base/images/05_nurse/nurse-first-view.jpg);
+  background-position: center center;
+  margin: 168px auto 0;
+  max-width: 980px;
+  width: 100%;
+}
 .p-pages-first-view__heading {
   font-family: Noto Serif JP;
   font-size: 30px;
@@ -901,6 +911,11 @@ a:active {
 .p-pages-first-view__heading--student {
   left: 492px;
   top: 45%;
+}
+.p-pages-first-view__heading--nurse {
+  bottom: 10px;
+  right: 0;
+  text-align: right;
 }
 
 .p-scholarship {
@@ -1089,6 +1104,13 @@ a:active {
   max-width: 840px;
   width: 100%;
 }
+.p-hospital-list--nurse-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
 .p-hospital-list__item {
   width: 240px;
 }
@@ -1097,6 +1119,15 @@ a:active {
 }
 .p-hospital-list__item:nth-of-type(n + 4) {
   margin-top: 40px;
+}
+.p-hospital-list__item--nurse-page {
+  width: calc(50% - 35px);
+}
+.p-hospital-list__item--nurse-page:nth-of-type(n + 3) {
+  margin-top: 35px;
+}
+.p-hospital-list__item--nurse-page:nth-of-type(2n) {
+  margin-left: 70px;
 }
 .p-hospital-list__img {
   height: 178px;
@@ -1133,6 +1164,11 @@ a:active {
 
 .p-support-center {
   margin-top: 40px;
+}
+.p-support-center--nurse-page {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px 20px 40px 20px;
 }
 .p-support-center__text {
   line-height: 1.73;
@@ -1317,6 +1353,62 @@ a:active {
   border-top: 1px solid #ccc;
 }
 
+.p-hospital-introduction {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 35px 15px 15px 15px;
+}
+.p-hospital-introduction__list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.p-hospital-introduction__list-item p {
+  line-height: 1.74;
+  text-align: center;
+}
+.p-hospital-introduction__list-item + .p-hospital-introduction__list-item {
+  margin-top: 20px;
+}
+
+.p-nurse-sidebar {
+  background-color: #fff;
+  padding: 30px 10px 10px 10px;
+}
+.p-nurse-sidebar__text {
+  line-height: 1.74;
+  margin-top: 20px;
+  text-align: center;
+}
+.p-nurse-sidebar__list {
+  margin-top: 20px;
+}
+.p-nurse-sidebar__list-item + .p-nurse-sidebar__list-item {
+  margin-top: 10px;
+}
+.p-nurse-sidebar__item-text-wrap {
+  line-height: 1.74;
+  margin-top: 10px;
+}
+.p-nurse-sidebar__item-text-wrap address {
+  color: #666;
+  font-size: 14px;
+}
+.p-nurse-sidebar__button-wrap {
+  margin-top: 5px;
+}
+.p-nurse-sidebar__button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  width: 100%;
+}
+
 .c-heading--border-bottom {
   border-bottom: 2px solid #20b97b;
   color: #20b97b;
@@ -1339,6 +1431,9 @@ a:active {
 
 .u-text-align--right {
   text-align: right;
+}
+.u-text-align--center {
+  text-align: center;
 }
 
 .u-mt--10 {

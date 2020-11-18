@@ -1,6 +1,12 @@
 .p-support-center {
   margin-top: 40px;
 
+  &--nurse-page {
+    background-color: $white;
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+  }
+
   &__text {
     line-height: 1.73;
     margin-top: 25px;
