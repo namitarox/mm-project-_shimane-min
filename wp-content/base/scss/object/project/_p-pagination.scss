@@ -1,0 +1,27 @@
+.p-pagination {
+  margin: 30px auto 0;
+
+  &__list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__item {
+    color: $grey;
+    font-size: 22px;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__item--active {
+    color: $green;
+  }
+
+  &__item + &__item {
+    margin-left: 15px;
+  }
+}
