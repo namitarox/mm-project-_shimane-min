@@ -543,6 +543,9 @@ a:active {
 .l-wrapper--student {
   margin: 168px auto 75px;
 }
+.l-wrapper--news {
+  margin: 168px auto 60px;
+}
 
 .l-main {
   max-width: 700px;
@@ -643,6 +646,9 @@ a:active {
   padding: 35px 15px 15px 15px;
   width: 100%;
 }
+.p-news--news-page {
+  padding: 35px 15px 50px 15px;
+}
 .p-news--individual-page {
   margin-top: 20px;
 }
@@ -666,6 +672,9 @@ a:active {
   height: 30px;
   justify-content: center;
   width: 176px;
+}
+.p-news__button--small {
+  width: 120px;
 }
 .p-news__top-item {
   margin: 20px 15px 0;
@@ -692,7 +701,15 @@ a:active {
   align-items: center;
   border-top: 1px solid #ccc;
   display: flex;
-  height: 60px;
+  height: 100%;
+  min-height: 60px;
+  padding: 0 10px;
+}
+.p-news__item--news-page {
+  min-height: 70px;
+}
+.p-news__item--news-page:first-of-type {
+  border-top: none;
 }
 .p-news__item-title {
   height: 100%;
@@ -1246,6 +1263,60 @@ a:active {
   width: 362px;
 }
 
+.p-pagination {
+  margin: 30px auto 0;
+}
+.p-pagination__list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.p-pagination__item {
+  color: #999;
+  font-size: 22px;
+}
+.p-pagination__item:hover {
+  color: #20b97b;
+}
+.p-pagination__item--active {
+  color: #20b97b;
+}
+.p-pagination__item + .p-pagination__item {
+  margin-left: 15px;
+}
+
+.p-news-sidebar__contents {
+  background-color: #fff;
+  padding: 15px;
+}
+.p-news-sidebar__contents + .p-news-sidebar__contents {
+  margin-top: 20px;
+}
+.p-news-sidebar__title {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  width: 230px;
+}
+.p-news-sidebar__list-item {
+  height: 80px;
+}
+.p-news-sidebar__list-item a {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding-left: 30px;
+  width: 100%;
+}
+.p-news-sidebar__list-item + .p-news-sidebar__list-item {
+  border-top: 1px solid #ccc;
+}
+
 .c-heading--border-bottom {
   border-bottom: 2px solid #20b97b;
   color: #20b97b;
@@ -1295,6 +1366,10 @@ a:active {
 
 .u-mb--20 {
   margin-bottom: 20px;
+}
+
+.u-pl--65 {
+  padding-left: 65px;
 }
 
 .u-font--bold {

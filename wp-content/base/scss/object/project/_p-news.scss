@@ -4,6 +4,10 @@
   padding: 35px 15px 15px 15px;
   width: 100%;
 
+  &--news-page {
+    padding: 35px 15px 50px 15px;
+  }
+
   &--individual-page {
     margin-top: 20px;
   }
@@ -30,6 +34,10 @@
     height: 30px;
     justify-content: center;
     width: 176px;
+  }
+
+  &__button--small {
+    width: 120px;
   }
 
   &__top-item {
@@ -62,7 +70,17 @@
     align-items: center;
     border-top: 1px solid $lightGrey;
     display: flex;
-    height: 60px;
+    height: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+  }
+
+  &__item--news-page {
+    min-height: 70px;
+
+    &:first-of-type {
+      border-top: none;
+    }
   }
 
   &__item-title {
