@@ -778,7 +778,7 @@ a:active {
 .p-platform {
   margin: 20px 0 0 0;
 }
-.p-platform__textarea {
+.p-platform__text-wrap {
   background-color: #f8f8ff;
   border: 0.3px solid #d2d2d2;
   border-radius: 10px;
