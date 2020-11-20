@@ -11,24 +11,12 @@
   }
 
   &__button {
-    align-items: center;
-    background-color: $green;
-    border-radius: 5px;
-    color: $white;
-    display: flex;
     height: 40px;
-    justify-content: center;
     margin: 0 0 0 auto;
     width: 287px;
 
     &--wide {
-      align-items: center;
-      background-color: $green;
-      border-radius: 5px;
-      color: $white;
-      display: flex;
       height: 40px;
-      justify-content: center;
       width: 362px;
     }
   }

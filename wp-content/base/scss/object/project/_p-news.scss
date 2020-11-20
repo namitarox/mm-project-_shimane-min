@@ -26,17 +26,12 @@
   }
 
   &__button {
-    align-items: center;
-    background-color: $green;
-    border-radius: 5px;
-    color: $white;
-    display: flex;
     height: 30px;
-    justify-content: center;
     width: 176px;
   }
 
   &__button--small {
+    height: 30px;
     width: 120px;
   }
 

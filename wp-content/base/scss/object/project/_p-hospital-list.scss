@@ -51,18 +51,14 @@
   }
 
   &__button {
-    align-items: center;
-    background-color: $green;
-    border-radius: 5px;
-    color: $white;
-    display: flex;
     height: 44px;
-    justify-content: center;
     width: 100%;
 
-    &--disabled {
+    &--disabled:not(:root) {
       background-color: $grey;
+      height: 44px;
       pointer-events: none;
+      width: 100%;
     }
   }
 }
