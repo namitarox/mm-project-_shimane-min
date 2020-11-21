@@ -971,7 +971,8 @@ a:active {
 }
 .p-scholarship-lead__text {
   line-height: 1.63;
-  margin: 20px 20px 0;
+  margin: 20px auto 0;
+  width: 96%;
 }
 
 .p-faq {
