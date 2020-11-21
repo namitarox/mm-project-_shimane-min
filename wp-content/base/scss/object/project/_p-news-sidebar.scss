@@ -22,6 +22,11 @@
       padding-left: 30px;
       width: 100%;
     }
+
+    a:hover {
+      color: $green;
+      text-decoration: underline;
+    }
   }
 
   &__list-item + &__list-item {
