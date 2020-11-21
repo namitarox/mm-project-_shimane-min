@@ -420,6 +420,7 @@ body {
   background-color: #f8f8ff;
   color: #333;
   font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", Osaka, sans-serif;
+  position: relative;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -1502,6 +1503,13 @@ a:active {
 .p-contact__button {
   height: 60px;
   width: 240px;
+}
+
+.p-page-top {
+  bottom: 305px;
+  position: fixed;
+  right: 25px;
+  width: 84.5px;
 }
 
 .c-heading--border-bottom {
