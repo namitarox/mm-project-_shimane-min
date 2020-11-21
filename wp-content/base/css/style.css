@@ -767,7 +767,11 @@ a:active {
 .p-about {
   background-color: #fff;
   margin: 20px 0 0 0;
-  padding: 30px 15px 15px 15px;
+  padding: 30px 15px;
+}
+.p-about__summary {
+  line-height: 1.63;
+  margin-top: 20px;
 }
 
 .p-platform {
@@ -856,7 +860,7 @@ a:active {
   height: 172px;
 }
 .p-office__img img {
-  height: 100%;
+  object-fit: cover;
 }
 .p-office__list {
   margin-top: 20px;

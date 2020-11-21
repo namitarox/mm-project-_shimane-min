@@ -1,5 +1,10 @@
 .p-about {
   background-color: $white;
   margin: 20px 0 0 0;
-  padding: 30px 15px 15px 15px;
+  padding: 30px 15px;
+
+  &__summary {
+    line-height: 1.63;
+    margin-top: 20px;
+  }
 }
