@@ -648,7 +648,6 @@ a:active {
 
 .p-news {
   background-color: #fff;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
   padding: 35px 15px 15px 15px;
   width: 100%;
 }
@@ -761,13 +760,8 @@ a:active {
 
 .p-about {
   background-color: #fff;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
   margin: 20px 0 0 0;
   padding: 30px 15px 15px 15px;
-}
-.p-about__description {
-  line-height: 1.63;
-  margin-top: 20px;
 }
 
 .p-platform {
@@ -790,8 +784,8 @@ a:active {
 }
 .p-summary__table {
   line-height: 1.74;
-  margin-top: 20px;
-  width: 100%;
+  margin: 20px auto 0;
+  width: 96%;
 }
 .p-summary__table-title {
   background-color: #f2f0ec;
@@ -839,6 +833,10 @@ a:active {
 .p-office {
   margin-top: 40px;
 }
+.p-office__wrap {
+  margin: 0 auto;
+  width: 96%;
+}
 .p-office__text {
   margin-top: 20px;
 }
@@ -865,14 +863,12 @@ a:active {
 
 .p-facebook {
   background-color: #fff;
-  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
   padding: 10px;
   width: 100%;
 }
 
 .p-line {
   background-color: #fff;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
   margin-top: 20px;
   padding: 15px;
 }

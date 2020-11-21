@@ -1,6 +1,11 @@
 .p-office {
   margin-top: 40px;
 
+  &__wrap {
+    margin: 0 auto;
+    width: 96%;
+  }
+
   &__text {
     margin-top: 20px;
   }
