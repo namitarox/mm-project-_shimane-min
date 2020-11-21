@@ -820,6 +820,11 @@ a:active {
   padding: 10px 15px;
   width: 85%;
 }
+.p-summary__map iframe {
+  border: 0;
+  height: 186px;
+  width: 100%;
+}
 .p-summary__map + .p-summary__map {
   margin-top: 20px;
 }
