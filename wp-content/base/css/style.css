@@ -957,7 +957,7 @@ a:active {
   width: 906px;
 }
 .p-scholarship-lead__img img {
-  height: 100%;
+  object-fit: cover;
 }
 .p-scholarship-lead__text {
   line-height: 1.63;
@@ -1072,7 +1072,6 @@ a:active {
 
 .p-doctor {
   background-color: #fff;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
   margin-top: 20px;
   padding: 30px 20px 50px;
 }
@@ -1568,6 +1567,9 @@ a:active {
 }
 .u-font--small {
   font-size: 12px;
+}
+.u-font--medium {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
