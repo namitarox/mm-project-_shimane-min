@@ -1315,11 +1315,14 @@ a:active {
 .p-pagination__item:hover {
   color: #20b97b;
 }
-.p-pagination__item--active {
+.p-pagination__item.is-active {
   color: #20b97b;
 }
 .p-pagination__item + .p-pagination__item {
   margin-left: 15px;
+}
+.p-pagination__item--arrow {
+  font-size: 14px;
 }
 
 .p-news-sidebar__contents {
