@@ -18,4 +18,14 @@
   &__list-item + &__list-item {
     margin-top: 20px;
   }
+
+  &__video {
+    height: 360px;
+    width: 640px;
+  }
+
+  &__video--large {
+    height: 480px;
+    width: 640px;
+  }
 }
