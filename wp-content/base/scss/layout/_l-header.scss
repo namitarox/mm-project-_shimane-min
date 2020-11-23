@@ -1,5 +1,6 @@
 .l-header {
   background-color: $white;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -14,7 +15,13 @@
 
   &__inner {
     align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
     height: 22px;
     justify-content: space-between;
     margin: 0 auto;
@@ -23,6 +30,8 @@
   }
 
   &__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -34,7 +43,13 @@
 .l-header-bottom {
   &__inner {
     align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
     height: 91px;
     justify-content: space-between;
     margin: 0 auto;
@@ -48,15 +63,25 @@
 
   &__nav-list {
     align-items: center;
+    -webkit-box-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     height: 47px;
   }
 
   &__nav-item a {
     align-items: center;
     border-radius: 5px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
     color: $green;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
     height: 47px;
     justify-content: center;
     width: 160px;

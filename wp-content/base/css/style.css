@@ -448,6 +448,7 @@ a:active {
 
 .l-header {
   background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -462,7 +463,13 @@ a:active {
 }
 .l-header-top__inner {
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
   height: 22px;
   justify-content: space-between;
   margin: 0 auto;
@@ -470,6 +477,8 @@ a:active {
   width: 100%;
 }
 .l-header-top__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .l-header-top__link-item + .l-header-top__link-item {
@@ -478,7 +487,13 @@ a:active {
 
 .l-header-bottom__inner {
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
   height: 91px;
   justify-content: space-between;
   margin: 0 auto;
@@ -490,14 +505,24 @@ a:active {
 }
 .l-header-bottom__nav-list {
   align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   height: 47px;
 }
 .l-header-bottom__nav-item a {
   align-items: center;
   border-radius: 5px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
   color: #20b97b;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   height: 47px;
   justify-content: center;
   width: 160px;
@@ -526,7 +551,11 @@ a:active {
 }
 
 .l-wrapper {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 55px auto;
   max-width: 980px;
@@ -563,10 +592,13 @@ a:active {
   width: 100%;
 }
 .l-main--scholarship {
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
 }
 
 .l-sidebar {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   max-width: 260px;
   width: 100%;
@@ -577,7 +609,11 @@ a:active {
   padding: 40px 0;
 }
 .l-footer__inner {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 980px;
@@ -585,6 +621,7 @@ a:active {
 }
 .l-footer__box {
   background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   padding: 10px;
   width: 292px;
@@ -612,7 +649,9 @@ a:active {
   width: calc(100% - 292px);
 }
 .l-footer__nav-grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .l-footer__nav-list {
@@ -627,7 +666,11 @@ a:active {
 }
 .l-footer__bottom-contents {
   bottom: 0;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: absolute;
   width: 100%;
@@ -636,7 +679,11 @@ a:active {
   font-size: 12px;
 }
 .l-footer__sns-links {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 126px;
 }
@@ -661,7 +708,13 @@ a:active {
 .p-news__heading-area {
   align-items: center;
   border-bottom: 2px solid #20b97b;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 30px;
 }
@@ -684,6 +737,8 @@ a:active {
   margin: 20px 15px 0;
 }
 .p-news__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .p-news__top-img {
@@ -704,7 +759,11 @@ a:active {
 .p-news__item {
   align-items: center;
   border-top: 1px solid #ccc;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   height: 100%;
   min-height: 60px;
   padding: 0 10px;
@@ -722,7 +781,11 @@ a:active {
 }
 .p-news__item-title a {
   align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   height: 60px;
   max-height: 70px;
 }
@@ -736,6 +799,8 @@ a:active {
 }
 .p-news__sns-list {
   border-top: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
   padding-top: 15px;
@@ -746,8 +811,14 @@ a:active {
 }
 .p-news__sns-item a {
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   font-size: 11px;
   height: 20px;
   justify-content: center;
@@ -865,13 +936,16 @@ a:active {
   height: 172px;
 }
 .p-office__img img {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .p-office__list {
   margin-top: 20px;
 }
 .p-office__item-grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 2fr 1.8fr 1fr;
   grid-template-columns: 2fr 1.8fr 1fr;
   line-height: 1.74;
 }
@@ -972,6 +1046,7 @@ a:active {
   width: 906px;
 }
 .p-scholarship-lead__img img {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .p-scholarship-lead__text {
@@ -1012,7 +1087,13 @@ a:active {
 }
 .p-scholarship-flow__grid {
   align-items: baseline;
+  -webkit-box-align: baseline;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: baseline;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 845px;
@@ -1022,8 +1103,16 @@ a:active {
   align-items: center;
   background-color: #20b97b;
   border-radius: 7px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   justify-content: center;
   line-height: 1.5;
@@ -1040,6 +1129,7 @@ a:active {
 .p-scholarship-flow__arrow::before {
   border: 12px solid transparent;
   border-left: 18px solid #20b97b;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 24px;
   left: 24px;
@@ -1079,7 +1169,11 @@ a:active {
   width: 362px;
 }
 .p-scholarship-detail__buttons {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 65px auto 0;
   max-width: 780px;
@@ -1097,7 +1191,11 @@ a:active {
   margin-top: 20px;
 }
 .p-training__buttons {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 30px auto 0;
   width: 70%;
@@ -1120,14 +1218,20 @@ a:active {
 }
 
 .p-hospital-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 840px;
   width: 100%;
 }
 .p-hospital-list--nurse-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 600px;
@@ -1193,7 +1297,11 @@ a:active {
   margin-top: 25px;
 }
 .p-support-center__banner-list {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 80px;
   max-width: 936px;
@@ -1201,8 +1309,15 @@ a:active {
 }
 .p-support-center__banner {
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 220px;
 }
@@ -1232,6 +1347,8 @@ a:active {
   width: 98%;
 }
 .p-dentist-recruit__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .p-dentist-recruit__grid p + p {
@@ -1272,7 +1389,11 @@ a:active {
   width: 365px;
 }
 .p-dentist-scholarship__buttons {
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 40px auto 0;
   width: 100%;
@@ -1304,7 +1425,13 @@ a:active {
 }
 .p-pagination__list {
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
 }
@@ -1341,7 +1468,11 @@ a:active {
 }
 .p-news-sidebar__list-item a {
   align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   height: 100%;
   padding-left: 30px;
   width: 100%;
@@ -1361,7 +1492,14 @@ a:active {
 }
 .p-hospital-introduction__list {
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 20px;
 }
@@ -1461,12 +1599,22 @@ a:active {
 }
 .p-contact__check-list {
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .p-contact__check-list--right {
   align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
 }
 .p-contact__check-item input {
   vertical-align: -1px;
@@ -1514,7 +1662,11 @@ a:active {
   text-align: center;
 }
 .p-contact__buttons {
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 60px;
 }
@@ -1543,13 +1695,18 @@ a:active {
 .c-heading--border-left {
   align-items: center;
   border-left: 4px solid #20b97b;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   font-size: 20px;
   height: 48px;
   padding-left: 15px;
 }
 
 .c-box--shadow {
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -1557,8 +1714,14 @@ a:active {
   align-items: center;
   background-color: #20b97b;
   border-radius: 5px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 

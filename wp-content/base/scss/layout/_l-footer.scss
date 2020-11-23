@@ -3,7 +3,11 @@
   padding: 40px 0;
 
   &__inner {
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 980px;
@@ -12,6 +16,7 @@
 
   &__box {
     background-color: $white;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     width: 292px;
@@ -45,7 +50,9 @@
   }
 
   &__nav-grid {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
@@ -64,7 +71,11 @@
 
   &__bottom-contents {
     bottom: 0;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: absolute;
     width: 100%;
@@ -75,7 +86,11 @@
   }
 
   &__sns-links {
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 126px;
   }
