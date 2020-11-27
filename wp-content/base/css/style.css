@@ -512,7 +512,7 @@ a:active {
   -ms-flex-align: center;
   height: 47px;
 }
-.l-header-bottom__nav-item a {
+.l-header-bottom__nav-link {
   align-items: center;
   border-radius: 5px;
   -webkit-box-align: center;
@@ -527,7 +527,7 @@ a:active {
   justify-content: center;
   width: 160px;
 }
-.l-header-bottom__nav-item a:hover {
+.l-header-bottom__nav-link.is-active {
   background-color: #20b97b;
   color: #fff;
 }

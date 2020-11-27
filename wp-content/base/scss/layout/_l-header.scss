@@ -71,7 +71,7 @@
     height: 47px;
   }
 
-  &__nav-item a {
+  &__nav-link {
     align-items: center;
     border-radius: 5px;
     -webkit-box-align: center;
@@ -86,7 +86,7 @@
     justify-content: center;
     width: 160px;
 
-    &:hover {
+    &.is-active {
       background-color: $green;
       color: $white;
     }
