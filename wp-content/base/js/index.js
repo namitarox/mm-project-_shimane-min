@@ -1,8 +1,8 @@
 $(function () {
   const scrollTop = function () {
-    const bottomMargin = 20,
-      $footer = $(".l-footer"),
-      $pageTop = $(".js-page-top");
+    const bottomMargin = 20;
+    const $footer = $(".l-footer");
+    const $pageTop = $(".js-page-top");
 
     $pageTop.hide();
 
@@ -13,8 +13,8 @@ $(function () {
         $pageTop.fadeOut();
       }
 
-      const footerStart = $footer.offset().top,
-        scrollBottom = $(this).scrollTop() + $(window).height();
+      const footerStart = $footer.offset().top;
+      const scrollBottom = $(this).scrollTop() + $(window).height();
 
       if (scrollBottom > footerStart) {
         $pageTop.css(
