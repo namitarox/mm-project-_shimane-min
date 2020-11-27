@@ -82,14 +82,23 @@
   }
 
   &__copyright {
+    align-items: flex-end;
+    -webkit-box-align: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
     font-size: 12px;
   }
 
   &__sns-links {
+    align-items: center;
+    -webkit-box-align: center;
     -webkit-box-pack: justify;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 126px;
@@ -97,6 +106,7 @@
 
   &__sns-icon {
     font-size: 22px;
+    width: 22px;
   }
 
   &__sns-icon + &__sns-icon {
