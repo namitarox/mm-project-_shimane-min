@@ -1570,6 +1570,9 @@ a:active {
 .p-nurse-sidebar__list-item + .p-nurse-sidebar__list-item {
   margin-top: 10px;
 }
+.p-nurse-sidebar__item-wrap {
+  height: 180px;
+}
 .p-nurse-sidebar__item-text-wrap {
   line-height: 1.74;
   margin-top: 10px;
