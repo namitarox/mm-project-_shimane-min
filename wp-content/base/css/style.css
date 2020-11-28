@@ -1525,7 +1525,7 @@ a:active {
 .p-hospital-introduction {
   background-color: #fff;
   margin-top: 20px;
-  padding: 35px 15px 15px 15px;
+  padding: 35px 15px 70px 15px;
 }
 .p-hospital-introduction__list {
   align-items: center;
@@ -1548,12 +1548,11 @@ a:active {
   margin-top: 20px;
 }
 .p-hospital-introduction__video {
-  height: 360px;
+  height: 340px;
   width: 640px;
 }
-.p-hospital-introduction__video--large {
-  height: 480px;
-  width: 640px;
+.p-hospital-introduction__video-title {
+  margin-top: 20px;
 }
 
 .p-nurse-sidebar {

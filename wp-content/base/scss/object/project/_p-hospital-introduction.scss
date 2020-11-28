@@ -1,7 +1,7 @@
 .p-hospital-introduction {
   background-color: $white;
   margin-top: 20px;
-  padding: 35px 15px 15px 15px;
+  padding: 35px 15px 70px 15px;
 
   &__list {
     align-items: center;
@@ -27,12 +27,11 @@
   }
 
   &__video {
-    height: 360px;
+    height: 340px;
     width: 640px;
   }
 
-  &__video--large {
-    height: 480px;
-    width: 640px;
+  &__video-title {
+    margin-top: 20px;
   }
 }
