@@ -442,9 +442,6 @@ a {
 a:hover {
   opacity: 0.8;
 }
-a:active {
-  color: inherit;
-}
 
 .l-header {
   background-color: #fff;
