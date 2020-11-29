@@ -534,9 +534,9 @@ a:hover {
 
 .l-first-view {
   background-image: url(/wp-content/base/images/01_top_page/top-page-first-view.jpg);
-  background-position: center center;
+  background-position: center -90px;
   background-size: cover;
-  height: 720px;
+  height: 700px;
 }
 .l-first-view__catch-copy {
   font-size: 28px;
@@ -1005,7 +1005,7 @@ a:hover {
 
 .p-pages-first-view {
   background-size: cover;
-  height: 372px;
+  height: 360px;
   position: relative;
 }
 .p-pages-first-view--scholarship {
@@ -1047,10 +1047,10 @@ a:hover {
 }
 .p-pages-first-view__heading--doctor {
   left: 30px;
-  top: 50px;
+  top: 40px;
 }
 .p-pages-first-view__heading--dentist {
-  bottom: 30px;
+  bottom: 20px;
   left: 30px;
 }
 .p-pages-first-view__heading--student {
@@ -1058,7 +1058,7 @@ a:hover {
   top: 45%;
 }
 .p-pages-first-view__heading--nurse {
-  bottom: 10px;
+  bottom: 15px;
   right: 0;
   text-align: right;
 }
@@ -1440,10 +1440,7 @@ a:hover {
 }
 
 .p-student {
-  margin-top: 40px;
-}
-.p-student__subtitle {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .p-student-plan {

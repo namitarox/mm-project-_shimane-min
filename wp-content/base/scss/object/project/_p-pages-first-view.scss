@@ -1,6 +1,6 @@
 .p-pages-first-view {
   background-size: cover;
-  height: 372px;
+  height: 360px;
   position: relative;
 
   &--scholarship {
@@ -49,11 +49,11 @@
 
   &__heading--doctor {
     left: 30px;
-    top: 50px;
+    top: 40px;
   }
 
   &__heading--dentist {
-    bottom: 30px;
+    bottom: 20px;
     left: 30px;
   }
 
@@ -63,7 +63,7 @@
   }
 
   &__heading--nurse {
-    bottom: 10px;
+    bottom: 15px;
     right: 0;
     text-align: right;
   }
