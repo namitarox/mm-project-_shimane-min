@@ -1388,8 +1388,14 @@ a:active {
   display: -ms-flexbox;
   display: flex;
 }
-.p-dentist-recruit__grid p + p {
+.p-dentist-recruit__grid-item + .p-dentist-recruit__grid-item {
   margin-left: 40px;
+}
+.p-dentist-recruit__grid-item {
+  display: flex;
+}
+.p-dentist-recruit__link {
+  text-decoration: underline;
 }
 .p-dentist-recruit__button-wrap {
   margin-top: 20px;
