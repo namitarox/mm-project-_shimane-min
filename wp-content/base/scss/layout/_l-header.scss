@@ -1,7 +1,7 @@
 .l-header {
   background-color: $white;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   width: 100%;
@@ -94,7 +94,6 @@
     }
 
     &:not(.is-active)::before {
-      border-left: 1px solid $grey;
       content: "";
       display: block;
       height: 47px;

@@ -189,7 +189,7 @@ img, embed, object, iframe {
  */
 button, input, optgroup, select, textarea {
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
   background: transparent;
   border-radius: 0;
   color: inherit;
@@ -206,12 +206,12 @@ button, input, optgroup, select, textarea {
  */
 [type="checkbox"] {
   -webkit-appearance: checkbox;
-  appearance: checkbox;
+          appearance: checkbox;
 }
 
 [type="radio"] {
   -webkit-appearance: radio;
-  appearance: radio;
+          appearance: radio;
 }
 
 /**
@@ -237,7 +237,7 @@ button, select {
  */
 button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -418,8 +418,9 @@ template {
 
 body {
   background-color: #f8f8ff;
-  color: #333;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", Osaka, sans-serif;
+  color: #333333;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3",
+  "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", Osaka, sans-serif;
   position: relative;
   -webkit-text-size-adjust: 100%;
 }
@@ -444,9 +445,9 @@ a:hover {
 }
 
 .l-header {
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   width: 100%;
@@ -455,7 +456,7 @@ a:hover {
 
 .l-header-top {
   background-color: #20b97b;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
 }
 .l-header-top__inner {
@@ -511,7 +512,6 @@ a:hover {
 }
 .l-header-bottom__nav-link {
   align-items: center;
-  border-radius: 5px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   color: #20b97b;
@@ -520,25 +520,21 @@ a:hover {
   display: flex;
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  height: 60px;
+  height: 35px;
   justify-content: center;
   position: relative;
   width: 160px;
 }
-.l-header-bottom__nav-link.is-active {
+.primary .l-header-bottom__nav-link {
   background-color: #20b97b;
-  color: #fff;
+  color: #ffffff;
   position: relative;
+  border-radius: 5px;
+  height: 60px;
 }
-.l-header-bottom__nav-link:not(.is-active)::before {
-  border-left: 1px solid #999;
-  content: "";
-  display: block;
-  height: 47px;
-  left: 0;
-  position: absolute;
-  top: 8px;
-  width: 160px;
+
+.l-header-bottom__nav-item:not(.primary) + .l-header-bottom__nav-item:not(.primary) {
+  border-left: solid 1px #999999;
 }
 
 .l-first-view {
@@ -599,13 +595,13 @@ a:hover {
 }
 .l-main--scholarship {
   -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
 }
 
 .l-sidebar {
   height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height:    -moz-fit-content;
+  height:         fit-content;
   max-width: 260px;
   width: 100%;
 }
@@ -626,9 +622,9 @@ a:hover {
   width: 100%;
 }
 .l-footer__box {
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   padding: 10px;
   width: 292px;
 }
@@ -640,7 +636,7 @@ a:hover {
   line-height: 1.38;
 }
 .l-footer__text-box + .l-footer__text-box {
-  border-top: 1px solid #999;
+  border-top: 1px solid #999999;
   margin-top: 10px;
 }
 .l-footer__telephone {
@@ -649,14 +645,14 @@ a:hover {
   text-align: center;
 }
 .l-footer__nav-area {
-  color: #fff;
+  color: #ffffff;
   margin-left: 25px;
   position: relative;
   width: calc(100% - 292px);
 }
 .l-footer__nav-grid {
   display: -ms-grid;
-  display: grid;
+  display:     grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -711,7 +707,7 @@ a:hover {
 }
 
 .p-news {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 35px 15px 15px 15px;
   width: 100%;
 }
@@ -774,7 +770,7 @@ a:hover {
 }
 .p-news__item {
   align-items: center;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   -webkit-box-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,7 +810,7 @@ a:hover {
   margin-top: 20px;
 }
 .p-news__sns-list {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,7 +825,7 @@ a:hover {
   align-items: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  color: #fff;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,7 +848,7 @@ a:hover {
 }
 
 .p-about {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 20px 0 0 0;
   padding: 30px 15px;
 }
@@ -891,24 +887,24 @@ a:hover {
 }
 .p-summary__table-title {
   background-color: #f2f0ec;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px 15px;
   width: 20%;
 }
 .p-summary__table-title--scholarship {
   background-color: #f2f0ec;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px 15px;
   text-align: center;
   width: 15%;
 }
 .p-summary__table-content {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px 15px;
   width: 80%;
 }
 .p-summary__table-content--scholarship {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px 15px;
   width: 85%;
 }
@@ -958,27 +954,27 @@ a:hover {
 }
 .p-office__img img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .p-office__list {
   margin-top: 20px;
 }
 .p-office__item-grid {
   display: -ms-grid;
-  display: grid;
+  display:     grid;
   -ms-grid-columns: 2fr 1.8fr 1fr;
   grid-template-columns: 2fr 1.8fr 1fr;
   line-height: 1.74;
 }
 
 .p-facebook {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 10px;
   width: 100%;
 }
 
 .p-line {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 20px;
   padding: 15px;
 }
@@ -1051,8 +1047,8 @@ a:hover {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .p-pages-first-view__heading--doctor {
   left: 30px;
@@ -1073,7 +1069,7 @@ a:hover {
 }
 
 .p-scholarship {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px 20px;
 }
 
@@ -1090,7 +1086,7 @@ a:hover {
 }
 .p-scholarship-lead__img img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .p-scholarship-lead__text-wrap {
   line-height: 1.63;
@@ -1152,15 +1148,15 @@ a:hover {
   border-radius: 7px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  color: #fff;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   -ms-flex-pack: center;
   height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height:    -moz-fit-content;
+  height:         fit-content;
   justify-content: center;
   line-height: 1.5;
   min-width: 106px;
@@ -1177,7 +1173,7 @@ a:hover {
   border: 12px solid transparent;
   border-left: 18px solid #20b97b;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   height: 24px;
   left: 24px;
   width: 24px;
@@ -1228,7 +1224,7 @@ a:hover {
 }
 
 .p-doctor {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 20px;
   padding: 30px 20px 50px;
 }
@@ -1265,7 +1261,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
   max-width: 840px;
   width: 100%;
@@ -1275,7 +1271,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
@@ -1313,7 +1309,7 @@ a:hover {
   width: 100%;
 }
 .p-hospital-list__button--disabled:not(:root) {
-  background-color: #999;
+  background-color: #999999;
   height: 44px;
   pointer-events: none;
   width: 100%;
@@ -1331,7 +1327,7 @@ a:hover {
   margin-top: 40px;
 }
 .p-support-center--nurse-page {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 20px;
   padding: 20px 20px 40px 20px;
 }
@@ -1355,7 +1351,7 @@ a:hover {
   -webkit-box-align: center;
   -webkit-box-pack: center;
   -webkit-box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1366,7 +1362,7 @@ a:hover {
 }
 
 .p-dentist-recruit {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px 20px 55px;
 }
 .p-dentist-recruit__contents {
@@ -1413,7 +1409,7 @@ a:hover {
 }
 
 .p-dentist-scholarship {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 20px;
   padding: 30px 20px 55px;
 }
@@ -1453,7 +1449,7 @@ a:hover {
 }
 
 .p-student-plan {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 20px;
   padding: 35px 15px 35px 15px;
 }
@@ -1485,7 +1481,7 @@ a:hover {
   width: 100%;
 }
 .p-pagination__item {
-  color: #999;
+  color: #999999;
   font-size: 22px;
 }
 .p-pagination__item:hover {
@@ -1502,7 +1498,7 @@ a:hover {
 }
 
 .p-news-sidebar__contents {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 15px;
 }
 .p-news-sidebar__contents + .p-news-sidebar__contents {
@@ -1531,11 +1527,11 @@ a:hover {
   text-decoration: underline;
 }
 .p-news-sidebar__list-item + .p-news-sidebar__list-item {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
 }
 
 .p-hospital-introduction {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 20px;
   padding: 35px 15px 70px 15px;
 }
@@ -1549,7 +1545,7 @@ a:hover {
   display: flex;
   -ms-flex-align: center;
   -ms-flex-direction: column;
-  flex-direction: column;
+      flex-direction: column;
   margin-top: 20px;
 }
 .p-hospital-introduction__list-item p {
@@ -1568,7 +1564,7 @@ a:hover {
 }
 
 .p-nurse-sidebar {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px 10px 10px 10px;
 }
 .p-nurse-sidebar__text {
@@ -1590,7 +1586,7 @@ a:hover {
   margin-top: 10px;
 }
 .p-nurse-sidebar__item-text-wrap address {
-  color: #666;
+  color: #666666;
   font-size: 14px;
 }
 .p-nurse-sidebar__button-wrap {
@@ -1602,7 +1598,7 @@ a:hover {
 }
 
 .p-contact {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 35px 55px 55px 55px;
 }
 .p-contact__wrap {
@@ -1615,7 +1611,7 @@ a:hover {
   margin-top: 20px;
 }
 .p-contact__tel {
-  color: #f00;
+  color: #ff0000;
   font-size: 22px;
   margin-top: 20px;
 }
@@ -1633,20 +1629,20 @@ a:hover {
 }
 .p-contact__table-title {
   background-color: #f2f0ec;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px 15px;
   vertical-align: middle;
   width: 205px;
 }
 .p-contact__table-content {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   line-height: 1.74;
   padding: 10px 15px;
   vertical-align: middle;
   width: calc(100% - 205px);
 }
 .p-contact__required {
-  color: #f00;
+  color: #ff0000;
 }
 .p-contact__check-list {
   align-items: center;
@@ -1677,15 +1673,15 @@ a:hover {
   margin-left: 15px;
 }
 .p-contact__input--small {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   width: 246px;
 }
 .p-contact__input--large {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   width: 100%;
 }
 .p-contact textarea {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   width: 100%;
 }
 .p-contact__detail {
@@ -1706,7 +1702,7 @@ a:hover {
   text-align: center;
 }
 .p-contact__caution {
-  color: #f00;
+  color: #ff0000;
   font-size: 20px;
   font-weight: 600;
   margin-top: 50px;
@@ -1758,7 +1754,7 @@ a:hover {
 
 .c-box--shadow {
   -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
 }
 
 .c-button {
@@ -1767,7 +1763,7 @@ a:hover {
   border-radius: 5px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  color: #fff;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
