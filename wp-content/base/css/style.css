@@ -507,7 +507,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-  height: 47px;
+  height: 60px;
 }
 .l-header-bottom__nav-link {
   align-items: center;
@@ -520,16 +520,25 @@ a:hover {
   display: flex;
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  height: 47px;
+  height: 60px;
   justify-content: center;
+  position: relative;
   width: 160px;
 }
 .l-header-bottom__nav-link.is-active {
   background-color: #20b97b;
   color: #fff;
+  position: relative;
 }
-.l-header-bottom__nav-item + .l-header-bottom__nav-item {
+.l-header-bottom__nav-link:not(.is-active)::before {
   border-left: 1px solid #999;
+  content: "";
+  display: block;
+  height: 47px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 160px;
 }
 
 .l-first-view {

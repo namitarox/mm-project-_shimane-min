@@ -68,7 +68,7 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-    height: 47px;
+    height: 60px;
   }
 
   &__nav-link {
@@ -82,17 +82,26 @@
     display: flex;
     -ms-flex-align: center;
     -ms-flex-pack: center;
-    height: 47px;
+    height: 60px;
     justify-content: center;
+    position: relative;
     width: 160px;
 
     &.is-active {
       background-color: $green;
       color: $white;
+      position: relative;
     }
-  }
 
-  &__nav-item + &__nav-item {
-    border-left: 1px solid $grey;
+    &:not(.is-active)::before {
+      border-left: 1px solid $grey;
+      content: "";
+      display: block;
+      height: 47px;
+      left: 0;
+      position: absolute;
+      top: 8px;
+      width: 160px;
+    }
   }
 }
