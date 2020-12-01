@@ -93,6 +93,17 @@
       position: relative;
     }
 
+    &:not(:last-of-type) {
+      border-right: 1px solid $grey;
+      content: "";
+      display: block;
+      height: 47px;
+      left: 0;
+      position: absolute;
+      top: 8px;
+      width: 160px;
+    }
+
     &:not(.is-active)::before {
       border-left: 1px solid $grey;
       content: "";

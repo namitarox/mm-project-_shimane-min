@@ -530,6 +530,16 @@ a:hover {
   color: #fff;
   position: relative;
 }
+.l-header-bottom__nav-link:not(:last-of-type) {
+  border-right: 1px solid #999;
+  content: "";
+  display: block;
+  height: 47px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 160px;
+}
 .l-header-bottom__nav-link:not(.is-active)::before {
   border-left: 1px solid #999;
   content: "";
