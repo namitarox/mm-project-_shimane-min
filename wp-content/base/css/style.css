@@ -509,9 +509,11 @@ a:hover {
   -ms-flex-align: center;
   height: 60px;
 }
+.l-header-bottom__nav-item:nth-of-type(n + 3) {
+  border-left: 1px solid #999;
+}
 .l-header-bottom__nav-link {
   align-items: center;
-  border-radius: 5px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   color: #20b97b;
@@ -520,34 +522,24 @@ a:hover {
   display: flex;
   -ms-flex-align: center;
   -ms-flex-pack: center;
+  height: 45px;
+  justify-content: center;
+  width: 160px;
+}
+.l-header-bottom__nav-link--primary {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   height: 60px;
   justify-content: center;
-  position: relative;
-  width: 160px;
-}
-.l-header-bottom__nav-link.is-active {
-  background-color: #20b97b;
-  color: #fff;
-  position: relative;
-}
-.l-header-bottom__nav-link:not(:last-of-type) {
-  border-right: 1px solid #999;
-  content: "";
-  display: block;
-  height: 47px;
-  left: 0;
-  position: absolute;
-  top: 8px;
-  width: 160px;
-}
-.l-header-bottom__nav-link:not(.is-active)::before {
-  border-left: 1px solid #999;
-  content: "";
-  display: block;
-  height: 47px;
-  left: 0;
-  position: absolute;
-  top: 8px;
   width: 160px;
 }
 
