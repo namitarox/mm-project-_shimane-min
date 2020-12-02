@@ -1,31 +1,28 @@
 .p-pages-first-view {
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 360px;
   position: relative;
 
   &--scholarship {
     background-image: url(/wp-content/base/images/02_scholarship/scholarship-first-view.jpg);
-    background-position: center -75px;
   }
 
   &--doctor {
     background-image: url(/wp-content/base/images/03_doctor/doctor-first-view.jpg);
-    background-position: center -5px;
   }
 
   &--dentist {
     background-image: url(/wp-content/base/images/04_dentist/dentist-first-view.jpg);
-    background-position: center -85px;
   }
 
   &--student {
     background-image: url(/wp-content/base/images/06_high-school/high-school-first-view.jpg);
-    background-position: center -125px;
   }
 
   &--nurse {
     background-image: url(/wp-content/base/images/05_nurse/nurse-first-view.jpg);
-    background-position: center center;
     margin: 168px auto 0;
     max-width: 980px;
     width: 100%;
