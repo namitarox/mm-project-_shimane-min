@@ -44,7 +44,15 @@
   }
 
   &__img {
-    height: 178px;
+    height: 180px;
+    position: relative;
+  }
+
+  &__coming-soon {
+    color: $white;
+    left: 29%;
+    position: absolute;
+    top: 45%;
   }
 
   &__text {

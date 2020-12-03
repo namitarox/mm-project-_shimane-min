@@ -1301,7 +1301,14 @@ a:hover {
   margin-left: 70px;
 }
 .p-hospital-list__img {
-  height: 178px;
+  height: 180px;
+  position: relative;
+}
+.p-hospital-list__coming-soon {
+  color: #fff;
+  left: 29%;
+  position: absolute;
+  top: 45%;
 }
 .p-hospital-list__text {
   line-height: 1.73;
