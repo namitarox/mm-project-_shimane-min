@@ -552,7 +552,9 @@ a:hover {
   height: 700px;
 }
 .l-first-view__catch-copy {
+  font-family: "Noto Serif JP", serif;
   font-size: 28px;
+  font-weight: 500;
   left: 40px;
   letter-spacing: 0.05em;
   line-height: 1.36;
@@ -1043,9 +1045,9 @@ a:hover {
   background-image: url(/wp-content/base/images/05_nurse/nurse-first-view.jpg);
 }
 .p-pages-first-view__heading {
-  font-family: Noto Serif JP;
+  font-family: "Noto Serif JP", serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.43;
   position: absolute;
 }

@@ -1,8 +1,7 @@
 body {
   background-color: $purple;
   color: #333;
-  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3",
-  "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", Osaka, sans-serif;
+  font-family: $baseFont;
   position: relative;
   -webkit-text-size-adjust: 100%;
 }
