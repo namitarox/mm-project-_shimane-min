@@ -1,13 +1,13 @@
 .l-wrapper {
-  -webkit-box-pack: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 55px auto;
-  max-width: 980px;
-  width: 100%;
+  min-width: 1120px;
+  width: 1120px;
+
+  &--include-side {
+    display: flex;
+    margin: 50px auto;
+    min-width: 980px;
+    width: 980px;
+  }
 
   &--scholarship {
     margin: 168px auto 55px;
@@ -26,7 +26,9 @@
   }
 
   &--nurse {
-    margin: 20px auto 55px;
+    margin: 168px auto 45px;
+    min-width: 980px;
+    width: 980px;
   }
 
   &--news {

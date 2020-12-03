@@ -447,6 +447,7 @@ a:hover {
   background-color: #fff;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  min-width: 1120px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -560,15 +561,14 @@ a:hover {
 }
 
 .l-wrapper {
-  -webkit-box-pack: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  min-width: 1120px;
+  width: 1120px;
+}
+.l-wrapper--include-side {
   display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 55px auto;
-  max-width: 980px;
-  width: 100%;
+  margin: 50px auto;
+  min-width: 980px;
+  width: 980px;
 }
 .l-wrapper--scholarship {
   margin: 168px auto 55px;
@@ -583,7 +583,9 @@ a:hover {
   margin: 168px auto 75px;
 }
 .l-wrapper--nurse {
-  margin: 20px auto 55px;
+  margin: 168px auto 45px;
+  min-width: 980px;
+  width: 980px;
 }
 .l-wrapper--news {
   margin: 168px auto 60px;
@@ -597,6 +599,7 @@ a:hover {
   width: 100%;
 }
 .l-main--individual-page {
+  margin: 0 auto;
   max-width: 980px;
   width: 100%;
 }
@@ -609,12 +612,14 @@ a:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-left: 20px;
   max-width: 260px;
   width: 100%;
 }
 
 .l-footer {
   background-color: #20b97b;
+  min-width: 1120px;
   padding: 40px 0;
 }
 .l-footer__inner {
@@ -1036,9 +1041,6 @@ a:hover {
 }
 .p-pages-first-view--nurse {
   background-image: url(/wp-content/base/images/05_nurse/nurse-first-view.jpg);
-  margin: 168px auto 0;
-  max-width: 980px;
-  width: 100%;
 }
 .p-pages-first-view__heading {
   font-family: Noto Serif JP;
@@ -1774,6 +1776,10 @@ a:hover {
   -ms-flex-align: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c-grid {
+  display: flex;
 }
 
 .u-text-align--right {
