@@ -45,27 +45,37 @@
   }
 
   &__top-item {
-    margin: 20px 15px 0;
+    margin: 20px auto 0;
+    width: 96%;
   }
 
   &__top-inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
+  }
+
+  &__top-inner:hover &__top-text {
+    color: $green;
+    text-decoration: underline;
   }
 
   &__top-img {
-    background-color: #c4c4c4;
     height: 157px;
-    min-width: 312px;
-    width: 100%;
+    width: 312px;
+  }
+
+  &__top-img--individual-page {
+    height: 185px;
+    object-fit: cover;
+    width: 40%;
   }
 
   &__top-text {
-    font-size: 13px;
-    line-height: 1.83;
-    margin-left: 64px;
-    padding-top: 20px;
+    line-height: 1.49;
+    margin-left: 30px;
+    width: 50%;
   }
 
   &__list {
