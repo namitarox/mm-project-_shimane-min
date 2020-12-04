@@ -32,14 +32,27 @@ $(function () {
   };
 
   const smoothScroll = function () {
-    $('a[href^="#"]').click(function () {
-      const speed = 500;
+    $('a[href*="#"]:not([href="#"]').on("click", function () {
       const headerHeight = $(".l-header").height();
-      const href = $(this).attr("href");
-      const target = $(href == "#" || href == "" ? "html" : href);
-      const position = target.offset().top - headerHeight;
-      $("html, body").animate({ scrollTop: position }, speed, "swing");
-      return false;
+
+      if (
+        location.pathname.replace(/^\//, "") ==
+          this.pathname.replace(/^\//, "") &&
+        location.hostname == this.hostname
+      ) {
+        let target = $(this.hash);
+        target = target.length
+          ? target
+          : $("[name=" + this.hash.slice(1) + "]");
+        if (target.length) {
+          $("html,body").animate(
+            { scrollTop: target.offset().top - headerHeight },
+            1000,
+            "swing"
+          );
+          return false;
+        }
+      }
     });
   };
 
