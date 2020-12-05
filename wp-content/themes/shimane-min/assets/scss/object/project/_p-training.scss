@@ -1,0 +1,21 @@
+.p-training {
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__buttons {
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    width: 70%;
+  }
+
+  &__button {
+    height: 40px;
+    width: 287px;
+  }
+}

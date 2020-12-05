@@ -1,0 +1,41 @@
+.p-office {
+  margin-top: 40px;
+
+  &__wrap {
+    margin: 0 auto;
+    width: 96%;
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__table {
+    margin-top: 20px;
+  }
+
+  &__table + &__table {
+    margin-top: 50px;
+  }
+
+  &__img {
+    height: 300px;
+
+    img {
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__item-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1.8fr 1fr;
+    grid-template-columns: 2fr 1.8fr 1fr;
+    line-height: 1.74;
+  }
+}

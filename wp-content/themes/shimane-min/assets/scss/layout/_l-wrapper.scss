@@ -1,0 +1,41 @@
+.l-wrapper {
+  min-width: 1120px;
+  width: 1120px;
+
+  &--include-side {
+    display: flex;
+    margin: 50px auto;
+    min-width: 980px;
+    width: 980px;
+  }
+
+  &--scholarship {
+    margin: 168px auto 55px;
+  }
+
+  &--doctor {
+    margin: 168px auto 75px;
+  }
+
+  &--dentist {
+    margin: 168px auto 55px;
+  }
+
+  &--student {
+    margin: 168px auto 75px;
+  }
+
+  &--nurse {
+    margin: 168px auto 45px;
+    min-width: 980px;
+    width: 980px;
+  }
+
+  &--news {
+    margin: 168px auto 60px;
+  }
+
+  &--contact {
+    margin: 168px auto 75px;
+  }
+}

@@ -1,0 +1,41 @@
+.p-support-center {
+  margin-top: 40px;
+
+  &--nurse-page {
+    background-color: $white;
+    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
+  }
+
+  &__text {
+    line-height: 1.73;
+    margin-top: 25px;
+  }
+
+  &__banner-list {
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 80px;
+    max-width: 936px;
+    width: 100%;
+  }
+
+  &__banner {
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 220px;
+  }
+}

@@ -1,0 +1,80 @@
+.p-scholarship-flow {
+  margin: 35px 10px 0;
+
+  &__box {
+    background-color: $purple;
+    margin-top: 15px;
+    max-width: 905px;
+    padding: 25px 20px 10px;
+    width: 100%;
+  }
+
+  &__grid {
+    align-items: baseline;
+    -webkit-box-align: baseline;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 845px;
+    width: 100%;
+  }
+
+  &__grid-item {
+    align-items: center;
+    background-color: $green;
+    border-radius: 7px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    color: $white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: center;
+    line-height: 1.5;
+    min-width: 106px;
+    padding: 10px 10px;
+  }
+
+  &__arrow {
+    font-size: 27px;
+    padding: 0 0 0 16px;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &::before {
+      border: 12px solid transparent;
+      border-left: 18px solid $green;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 24px;
+      left: 24px;
+      width: 24px;
+    }
+
+    &::before, &::after {
+      bottom: 0;
+      content: "";
+      left: 0;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      vertical-align: middle;
+    }
+  }
+
+  &__caution {
+    line-height: 1.75;
+    margin-top: 15px;
+  }
+}
