@@ -46,13 +46,13 @@ function addCustomPosts() {
             'public' => true,
             'show_ui' => true
         )
-      );
+          );
     }
 }
 
-function subLoop($number = -1, $paged = "") {
+function subLoop($type, $number = -1, $paged = "") {
   $args = array(
-      'post_type' => 'news',
+      'post_type' => $type,
       'posts_per_page' => $number,
       'no_found_rows' => false,
       'paged' => $paged,
@@ -61,6 +61,8 @@ function subLoop($number = -1, $paged = "") {
 
     return $the_query;
 }
+
+
 
 function pagination($pages = '', $range = 2) {
     $showItems = ($range * 2)+1;

@@ -11,17 +11,17 @@ Template Name: news
       <h2 class="c-heading--border-bottom">お知らせ</h2>
       <ul class="p-news__list">
         <?php
-            $the_query = subLoop(10, $paged);
+            $the_query = subLoop('news', 10, $paged);
 
             if ($the_query->have_posts()) :
               while ($the_query->have_posts()) : $the_query->the_post();
           ?>
         <li class="p-news__item p-news__item--news-page">
           <p class="p-news__button--small c-button">
-            <?php the_category(); ?>
+            <?php echo get_the_term_list( $id, 'original_themes_cat' ); ?>
           </p>
           <p class="p-news__item-title">
-            <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+            <a href="<?php the_permalink();?>"><?php the_date(); ?><?php the_title(); ?></a>
           </p>
         </li>
         <?php
