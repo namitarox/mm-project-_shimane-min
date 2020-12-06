@@ -1640,7 +1640,7 @@ a:hover {
 .p-contact__tel span {
   font-size: 12px;
 }
-.p-contact__form {
+.p-contact form {
   margin-top: 40px;
 }
 .p-contact__table {
@@ -1687,9 +1687,6 @@ a:hover {
 }
 .p-contact__check-item input {
   vertical-align: -1px;
-}
-.p-contact__check-item span {
-  margin-left: 3px;
 }
 .p-contact__check-item + .p-contact__check-item {
   margin-left: 15px;
