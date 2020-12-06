@@ -51,10 +51,12 @@ function addCustomPosts() {
 }
 
 function subLoop($number = -1, $paged = "") {
-  $args = [
-    'post_type' => 'news', // カスタム投稿名が「news」の場合
-    'posts_per_page' => 10, // 表示する数
-    ];
+  $args = array(
+      'post_type' => 'news',
+      'posts_per_page' => $number,
+      'no_found_rows' => false,
+      'paged' => $paged,
+    );
     $the_query = new WP_Query($args);
 
     return $the_query;
