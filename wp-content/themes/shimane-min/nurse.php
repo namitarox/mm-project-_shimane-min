@@ -14,34 +14,36 @@ Template Name: nurse
   </div>
   <div class="c-grid u-mt--20">
     <main class="l-main">
+      <?php
+      $the_query = subLoop(9);
+      $counter = '';
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
+      ++$counter;
+    ?>
+      <?php if ($counter <= 1) : ?>
       <section class="p-news c-box--shadow">
         <div class="p-news__heading-area">
           <h2 class="p-news__heading">お知らせ</h2>
           <p>
-            <a <?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
-          </p>
+          <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
+        </p>
         </div>
-        <div class="p-news__top-item">
-          <a href="" class="p-news__top-inner">
-            <div class="p-news__top-img"></div>
-            <p class="p-news__top-text">
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-            </p>
-          </a>
-        </div>
+        <?php get_template_part('includes/jumbotron'); ?>
         <ul class="p-news__list">
+          <?php else: ?>
           <li class="p-news__item">
-            <p>2020/08/12</p>
+            <p><?php the_time('Y/m/d'); ?></p>
             <p class="p-news__item-title">
-              <a href="">奨学金制度Web説明会開催のお知らせ</a>
-            </p>
+            <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+          </p>
           </li>
-          <li class="p-news__item">
-            <p>2020/07/30</p>
-            <p class="p-news__item-title">
-              <a href="">医学科受験なんでも相談会 開催のお知らせ</a>
-            </p>
-          </li>
+          <?php endif;?>
+          <?php
+        endwhile;
+          endif;
+          wp_reset_postdata();
+        ?>
         </ul>
       </section>
       <section class="p-hospital-introduction c-box--shadow" id="nurse-introduction">

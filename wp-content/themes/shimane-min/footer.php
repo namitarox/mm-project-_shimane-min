@@ -31,83 +31,83 @@
         <div class="l-footer__nav-grid">
           <ul class="l-footer__nav-list">
             <li class="l-footer__nav-item">
-              <a href="./index.html">〇ホーム</a>
+              <a href=<?php echo home_url();?>>〇ホーム</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./index.html#top-about">〇島根民医連について</a>
+              <a href=<?php echo home_url("/#top-about");?>>〇島根民医連について</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./index.html#platform">┗民医連綱領</a>
+              <a href=<?php echo home_url("/#platform");?>>┗民医連綱領</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./index.html#top-summary">┗概要</a>
+              <a href=<?php echo home_url("/#summary");?>>┗概要</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./index.html#office">┗事業所のご案内</a>
-            </li>
-          </ul>
-          <ul class="l-footer__nav-list">
-            <li class="l-footer__nav-item">
-              <a href="./scholarship.html">〇奨学金をお考えのあなたへ</a>
-            </li>
-            <li class="l-footer__nav-item">
-              <a href="./scholarship.html#scholarship-summary">┗概要</a>
-            </li>
-            <li class="l-footer__nav-item">
-              <a href="./scholarship.html#scholarship-doctor">┗医学生向け<br /><span class="u-ml--12">奨学金制度のご案内</span></a>
-            </li>
-            <li class="l-footer__nav-item">
-              <a href="./scholarship.html#scholarship-flow">┗奨学金申請の流れ</a>
-            </li>
-            <li class="l-footer__nav-item">
-              <a href="./scholarship.html#scholarship-detail">┗奨学生になったら</a>
+              <a href=<?php echo home_url("/#office");?>>┗事業所のご案内</a>
             </li>
           </ul>
           <ul class="l-footer__nav-list">
             <li class="l-footer__nav-item">
-              <a href="./doctor.html">〇医師・医学生</a>
+              <a href=<?php echo home_url("/scholarship");?>>〇奨学金をお考えのあなたへ</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./doctor.html#doctor-training">┗初期研修・後期研修</a>
+              <a href=<?php echo home_url("/scholarship/#scholarship-summary");?>>┗概要</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./doctor.html#doctor-hospital-tour">┗病院見学・実習</a>
+              <a href=<?php echo home_url("scholarship/#scholarship-doctor");?>>┗医学生向け<br /><span class="u-ml--12">奨学金制度のご案内</span></a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./doctor.html#doctor-planning">┗企画</a>
+              <a href=<?php echo home_url("scholarship/#scholarship-flow");?>>┗奨学金申請の流れ</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./doctor.html#doctor-support-center">┗学生サポート<br />
+              <a href=<?php echo home_url("scholarship/#scholarship-detail");?>>┗奨学生になったら</a>
+            </li>
+          </ul>
+          <ul class="l-footer__nav-list">
+            <li class="l-footer__nav-item">
+              <a href=<?php echo home_url("/doctor");?>>〇医師・医学生</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href=<?php echo home_url("/doctor#doctor-training");?>>┗初期研修・後期研修</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href=<?php echo home_url("/doctor#hospital-tour");?>>┗病院見学・実習</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href=<?php echo home_url("/doctor#hospital-planning");?>>┗企画</a>
+            </li>
+            <li class="l-footer__nav-item">
+              <a href=<?php echo home_url("/doctor#hospital-support-center");?>>┗学生サポート<br />
                 <span class="u-ml--12">センターの紹介</span>
               </a>
             </li>
           </ul>
           <ul class="l-footer__nav-list">
             <li class="l-footer__nav-item">
-              <a href="./dentist.html">〇歯科医・歯科学生</a>
+              <a href=<?php echo home_url("/dentist");?>>〇歯科医・歯科学生</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./dentist.html#dentist-scholarship">〇歯科医学生奨学金</a>
+              <a href=<?php echo home_url("/dentist#dentist-scholarship");?>>〇歯科医学生奨学金</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./nurse.html">〇看護学生</a>
+              <a href=<?php echo home_url("/nurse");?>>〇看護学生</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./nurse.html#nurse-introduction">┗各病院の紹介</a>
+              <a href=<?php echo home_url("/nurse#nurse-introduction");?>>┗各病院の紹介</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./nurse.html#nurse-support-center">┗学生サポート<br /><span class="u-ml--12">センターの紹介</span></a>
+              <a href=<?php echo home_url("/nurse#nurse-support-center");?>>┗学生サポート<br /><span class="u-ml--12">センターの紹介</span></a>
             </li>
           </ul>
           <ul class="l-footer__nav-list">
             <li class="l-footer__nav-item">
-              <a href="./student.html">〇医師を目指す高校生</a>
+              <a href=<?php echo home_url("/student");?>>〇医師を目指す高校生</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./student.html#student-news">┗お知らせ</a>
+              <a href=<?php echo home_url("/student#student-news");?>>┗お知らせ</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href="./student.html#student-planning">┗高校生向け企画</a>
+              <a href=<?php echo home_url("/student#student-planning");?>>┗高校生向け企画</a>
             </li>
           </ul>
         </div>

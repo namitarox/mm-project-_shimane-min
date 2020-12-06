@@ -189,7 +189,6 @@ Template Name: scholarship
             <a
               class="p-scholarship-detail__button--wide c-button"
               href=<?php echo get_template_directory_uri().'/assets/images/02_scholarship/scholarship-lending-rules.pdf' ; ?>
-
               onclick="window.open('<?php echo get_template_directory_uri().'/assets/images/02_scholarship/scholarship-written-oath.pdf' ; ?>')"
               target="_blank"
             >お申し込み用紙・規定</a>

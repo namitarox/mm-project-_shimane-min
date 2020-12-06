@@ -2,18 +2,20 @@
   <section class="p-news-sidebar__contents c-box--shadow">
     <h2 class="p-news-sidebar__title c-button">カテゴリで探す</h2>
     <ul class="p-news-sidebar__list">
+      <?php
+	        // 親カテゴリーのものだけを一覧で取得
+	          $args = array(
+	        	'parent' => 0,
+	        	'orderby' => 'term_order',
+	        	'order' => 'ASC'
+	        );
+	      $categories = get_categories( $args );
+      ?>
+      <?php foreach( $categories as $category ) : ?>
       <li class="p-news-sidebar__list-item">
-        <a href="">医学生向け奨学金制度</a>
+        <a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
       </li>
-      <li class="p-news-sidebar__list-item">
-        <a href="">歯科医・歯科学生</a>
-      </li>
-      <li class="p-news-sidebar__list-item">
-        <a href="">看護学生</a>
-      </li>
-      <li class="p-news-sidebar__list-item">
-        <a href="">医師を目指す高校生</a>
-      </li>
+      <?php endforeach; ?>
     </ul>
   </section>
   <section class="p-news-sidebar__contents c-box--shadow">
@@ -21,7 +23,7 @@
     <?php // 年別アーカイブリストを表示
         $year=NULL; // 年の初期化
         $args = array( // クエリの作成
-          'post_type' => 'news', // 投稿タイプの指定
+          'post_type' => 'post', // 投稿タイプの指定
           'orderby' => 'date', // 日付順で表示
           'posts_per_page' => -1 // すべての投稿を表示
         );
@@ -30,7 +32,7 @@
           while ($the_query->have_posts()): $the_query->the_post(); // ループの開始
             if ($year != get_the_date('Y')){ // 同じ年でなければ表示
               $year = get_the_date('Y'); // 年の取得
-              echo '<li class="p-news-sidebar__list-item"><a href="'.home_url( '/', 'http' ).'news/'.$year.'">'.$year.'</a></li>'; // 年別アーカイブリストの表示
+              echo '<li class="p-news-sidebar__list-item"><a href="'.home_url( '/', 'http' ).$year.'">'.$year.'</a></li>'; // 年別アーカイブリストの表示
             }
           endwhile; // ループの終了
           echo '</ul>';

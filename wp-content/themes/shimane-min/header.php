@@ -28,8 +28,7 @@
     <div class="l-header-bottom">
       <div class="l-header-bottom__inner">
         <h1 class="l-header-bottom__logo">
-            <a href=<?php echo home_url();?>
-              >
+            <a href=<?php echo home_url();?>>
           <img src="<?php echo get_template_directory_uri();?>/assets/images/common/logo.png" alt="島根民主医療機関連合会">
         </a>
           </h1>

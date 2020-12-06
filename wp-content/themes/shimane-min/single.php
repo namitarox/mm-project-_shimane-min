@@ -8,7 +8,9 @@
       ?>
       <h2 class="c-heading--border-bottom u-pl--65"><?php the_title(); ?></h2>
       <p class="p-news__button p-news__button--small p-news__button--single c-button">
-        医師・医学生
+        <?php $cat = get_the_category(); ?>
+        <?php $cat = $cat[0]; ?>
+        <?php echo get_cat_name($cat->term_id); ?>
       </p>
       <p class="p-news__article">
         <?php the_content(); ?>

@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: contact
-*/
-?>
-
 <?php get_header(); ?>
 <div class="l-wrapper l-wrapper--contact">
   <main class="l-main--individual-page">

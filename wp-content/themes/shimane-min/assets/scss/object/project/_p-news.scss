@@ -32,12 +32,20 @@
 
   &__button {
     height: 30px;
-    width: 176px;
+    width: 175px;
+  }
+
+  &__button--news-page {
+    background-color: $green;
+    border-radius: 5px;
+    color: $white;
+    height: 30px;
+    padding: 5px 10px;
   }
 
   &__button--small {
     height: 30px;
-    width: 120px;
+    min-width: 120px;
   }
 
   &__button--single {
@@ -106,7 +114,26 @@
   &__item-title {
     height: 100%;
     margin-left: 40px;
-    width: 100%;
+    a {
+      align-items: center;
+      -webkit-box-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      height: 60px;
+      max-height: 70px;
+    }
+
+    a:hover {
+      color: $green;
+      text-decoration: underline;
+    }
+  }
+
+  &__item-title--news-page {
+    height: 100%;
+    margin-left: 10px;
     a {
       align-items: center;
       -webkit-box-align: center;

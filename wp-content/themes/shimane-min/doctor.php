@@ -7,46 +7,42 @@ Template Name: doctor
 <?php get_header(); ?>
 <div class="l-wrapper l-wrapper--doctor">
   <main class="l-main--individual-page">
+    <?php
+      $the_query = subLoop(9);
+      $counter = '';
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
+      ++$counter;
+    ?>
+    <?php if ($counter <= 1) : ?>
     <div class="p-pages-first-view p-pages-first-view--doctor">
       <h2 class="p-pages-first-view__heading p-pages-first-view__heading--doctor">
         「人を診る」ということ<br />
         学びませんか
       </h2>
     </div>
-    <div class="p-news p-news--individual-page c-box--shadow">
+    <div class="p-news c-box--shadow">
       <div class="p-news__heading-area">
         <h2 class="p-news__heading">お知らせ</h2>
         <p>
-          <a <?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
+          <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
         </p>
       </div>
-      <div class="p-news__top-item">
-        <a href="" class="p-news__top-inner">
-          <div class="p-news__top-img--individual-page">
-            <img src="<?php echo get_template_directory_uri();?>/assets/images/03_doctor/news-2.png" alt="" />
-          </div>
-          <p class="p-news__top-text">
-            島根民医連主催「医学生向け 奨学金制度Web説明会」を開催します！
-            島根民医連の奨学金制度をわかりやすくご説明します！<br />
-            保護者の方のご参加もOK♪
-          </p>
-        </a>
-      </div>
+      <?php get_template_part('includes/jumbotron'); ?>
       <ul class="p-news__list">
+        <?php else: ?>
         <li class="p-news__item">
-          <p>2020/10/12</p>
+          <p><?php the_time('Y/m/d'); ?></p>
           <p class="p-news__item-title">
-            <a href="">
-              11/14（土）島根民医連 奨学金制度説明会開催のお知らせ
-            </a>
+            <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
           </p>
         </li>
-        <li class="p-news__item">
-          <p>2020/09/14</p>
-          <p class="p-news__item-title">
-            <a href="">10/10（土）島根民医連 奨学金制度説明会開催のお知らせ</a>
-          </p>
-        </li>
+        <?php endif;?>
+        <?php
+        endwhile;
+          endif;
+          wp_reset_postdata();
+        ?>
       </ul>
     </div>
     <div class="p-doctor c-box--shadow">

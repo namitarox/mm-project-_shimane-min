@@ -23,36 +23,35 @@ function addCustomPosts() {
             'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt',      'custom-fields' ,'comments' ),
             )
         );
+
         register_taxonomy(
-        'original_themes_cat', /* タクソノミーの名前 */
+        'news_category', /* タクソノミーの名前 */
         'news', /* 使用するカスタム投稿タイプ名 */
         array(
           'hierarchical' => true, /* trueだと親子関係が使用可能。falseで使用不可 */
           'update_count_callback' => '_update_post_term_count',
-          'label' => 'カテゴリー',
-          'singular_label' => 'カテゴリー',
+          'label' => 'お知らせカテゴリー',
+          'singular_label' => 'お知らせカテゴリー',
           'public' => true,
           'show_ui' => true
           ));
-        /* カスタムタクソノミー、タグを使えるようにする */
-        register_taxonomy(
-          'original_themes_tag', /* タクソノミーの名前 */
-          'news', /* 使用するカスタム投稿タイプ名 */
-          array(
-            'hierarchical' => false,
-            'update_count_callback' => '_update_post_term_count',
-            'label' => 'タグ',
-            'singular_label' => 'タグ',
-            'public' => true,
-            'show_ui' => true
-        )
-          );
     }
 }
 
-function subLoop($type, $number = -1, $paged = "") {
+function limitCharacter($post, $limit) {
+    $mbStrength = mb_strlen($post->post_content);
+
+    if($mbStrength > $limit) {
+      $content= mb_substr(strip_tags($post->post_content),0,$limit) ;
+      echo $content. '…' ;
+    } else {
+      echo str_replace('\n', '', strip_tags($post->post_content));
+    }
+}
+
+function subLoop($number = -1, $paged = "") {
   $args = array(
-      'post_type' => $type,
+      'post_type' => 'post',
       'posts_per_page' => $number,
       'no_found_rows' => false,
       'paged' => $paged,

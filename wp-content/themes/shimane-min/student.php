@@ -17,7 +17,7 @@ Template Name: student
         <div class="p-news__heading-area">
           <h2 class="p-news__heading">お知らせ</h2>
           <p>
-            <a <?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧
+            <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧
           </a>
         </p>
         </div>

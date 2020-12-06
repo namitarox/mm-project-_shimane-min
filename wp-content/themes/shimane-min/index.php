@@ -7,41 +7,36 @@
 </div>
 <div class="l-wrapper l-wrapper--include-side">
   <main class="l-main">
+    <?php
+      $the_query = subLoop(9);
+      $counter = '';
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
+      ++$counter;
+    ?>
+    <?php if ($counter <= 1) : ?>
     <div class="p-news c-box--shadow">
       <div class="p-news__heading-area">
         <h2 class="p-news__heading">お知らせ</h2>
         <p>
-          <a <?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
+          <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
         </p>
       </div>
-      <div class="p-news__top-item">
-        <a href="" class="p-news__top-inner">
-          <div class="p-news__top-img">
-            <img src="./images/01_top_page/news-1.png" alt="" />
-          </div>
-          <p class="p-news__top-text">
-                日　時：12月20日（木）16：00～<br />
-                連絡先：担当　岩成<br />
-                TEL：070-2355-0721<br />
-                MAIL：igakutai117@gmail.com<br />
-                <br />
-                詳細は下記をごらんください。
-          </p>
-        </a>
-      </div>
+      <?php get_template_part('includes/jumbotron'); ?>
       <ul class="p-news__list">
+        <?php else: ?>
         <li class="p-news__item">
-          <p>2018/10/03</p>
+          <p><?php the_time('Y/m/d'); ?></p>
           <p class="p-news__item-title">
-                <a href="">ジェネラリスト・スペシャリストカンファレンス</a>
-              </p>
+            <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+          </p>
         </li>
-        <li class="p-news__item">
-          <p>2015/12/25</p>
-          <p class="p-news__item-title">
-                <a href="">ホームページをリニューアルしました。</a>
-              </p>
-        </li>
+        <?php endif;?>
+        <?php
+        endwhile;
+          endif;
+          wp_reset_postdata();
+        ?>
       </ul>
     </div>
     <div class="p-about c-box--shadow" id="top-about">
