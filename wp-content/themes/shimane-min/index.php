@@ -7,14 +7,6 @@
 </div>
 <div class="l-wrapper l-wrapper--include-side">
   <main class="l-main">
-    <?php
-      $the_query = subLoop(9);
-      $counter = '';
-      if ($the_query->have_posts()) :
-        while ($the_query->have_posts()) : $the_query->the_post();
-      ++$counter;
-    ?>
-    <?php if ($counter <= 1) : ?>
     <div class="p-news c-box--shadow">
       <div class="p-news__heading-area">
         <h2 class="p-news__heading">お知らせ</h2>
@@ -22,6 +14,14 @@
           <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
         </p>
       </div>
+      <?php
+      $the_query = subLoop(10);
+      $counter = '';
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
+      ++$counter;
+    ?>
+      <?php if ($counter <= 1) : ?>
       <?php get_template_part('includes/jumbotron'); ?>
       <ul class="p-news__list">
         <?php else: ?>
