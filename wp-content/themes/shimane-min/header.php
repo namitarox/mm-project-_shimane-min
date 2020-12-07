@@ -35,7 +35,7 @@
         <nav class="l-header-bottom__nav">
           <ul class="l-header-bottom__nav-list">
             <li class="l-header-bottom__nav-item">
-              <a class="l-header-bottom__nav-link--primary" href=<?php echo home_url("/scholarship-2"); ?>>医学生向け<br />奨学金制度</a>
+              <a class="l-header-bottom__nav-link--primary" href=<?php echo home_url("/scholarship-system"); ?>>医学生向け<br />奨学金制度</a>
             </li>
             <li class="l-header-bottom__nav-item">
               <a class="l-header-bottom__nav-link" href=<?php echo home_url("/doctor"); ?>>医師・医学生</a>

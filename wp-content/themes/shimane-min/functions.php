@@ -49,10 +49,11 @@ function limitCharacter($post, $limit) {
     }
 }
 
-function subLoop($number = -1, $paged = "") {
+function subLoop($number = -1, $category = "",$paged = "") {
   $args = array(
       'post_type' => 'post',
       'posts_per_page' => $number,
+      'category_name' => $category,
       'no_found_rows' => false,
       'paged' => $paged,
     );

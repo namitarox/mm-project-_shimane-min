@@ -4,12 +4,7 @@
     <div class="p-news p-news--news-page c-box--shadow">
       <h2 class="c-heading--border-bottom">お知らせ</h2>
       <ul class="p-news__list">
-        <?php
-            $the_query = subLoop(1, $paged);
-
-            if ($the_query->have_posts()) :
-              while ($the_query->have_posts()) : $the_query->the_post();
-          ?>
+        <?php if(have_posts()): while(have_posts()): the_post(); ?>
         <li class="p-news__item p-news__item--news-page">
           <p class="p-news__button--news-page">
             <?php $cat = get_the_category(); ?>

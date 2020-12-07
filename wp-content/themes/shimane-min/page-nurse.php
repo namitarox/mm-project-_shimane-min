@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: nurse
-*/
-?>
-
 <?php get_header(); ?>
 <div class="l-wrapper--nurse">
   <div class="p-pages-first-view p-pages-first-view--nurse">
@@ -14,14 +8,6 @@ Template Name: nurse
   </div>
   <div class="c-grid u-mt--20">
     <main class="l-main">
-      <?php
-      $the_query = subLoop(9);
-      $counter = '';
-      if ($the_query->have_posts()) :
-        while ($the_query->have_posts()) : $the_query->the_post();
-      ++$counter;
-    ?>
-      <?php if ($counter <= 1) : ?>
       <section class="p-news c-box--shadow">
         <div class="p-news__heading-area">
           <h2 class="p-news__heading">お知らせ</h2>
@@ -29,6 +15,14 @@ Template Name: nurse
           <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
         </p>
         </div>
+        <?php
+          $the_query = subLoop(3, "nurse");
+          $counter = '';
+          if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) : $the_query->the_post();
+          ++$counter;
+        ?>
+        <?php if ($counter <= 1) : ?>
         <?php get_template_part('includes/jumbotron'); ?>
         <ul class="p-news__list">
           <?php else: ?>

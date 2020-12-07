@@ -21,29 +21,29 @@ Template Name: student
           </a>
         </p>
         </div>
-        <div class="p-news__top-item">
-          <a href="" class="p-news__top-inner">
-            <div class="p-news__top-img--individual-page">
-              <img src="<?php echo get_template_directory_uri();?>/assets/images/06_student/news-3.png" alt="" />
-            </div>
-            <p class="p-news__top-text">
-              「医学科受験直前対策！模擬面接」を開催します！<br />
-              対象 ： 医学部医学科験を目指す高校生・浪人生・予備校生<br />
-              ※学年は問いません<br />
-              今年は選べる対面式とオンライン！<br />
-              どちらか一方でも、両方でもお申込みいただけます♪<br />
-              病院職員や島根大学の先輩学生を面接官に、本番さながらの模擬面接を行います。
-              直前の実践練習で試験に役立てよう！
-            </p>
-          </a>
-        </div>
+        <?php
+          $the_query = subLoop(3, "student");
+          $counter = '';
+          if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) : $the_query->the_post();
+          ++$counter;
+        ?>
+        <?php if ($counter <= 1) : ?>
+        <?php get_template_part('includes/jumbotron'); ?>
         <ul class="p-news__list">
+          <?php else: ?>
           <li class="p-news__item">
-            <p>2020/07/30</p>
+            <p><?php the_time('Y/m/d'); ?></p>
             <p class="p-news__item-title">
-              <a href="">医学科受験なんでも相談会 開催のお知らせ</a>
-            </p>
+            <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+          </p>
           </li>
+          <?php endif;?>
+          <?php
+            endwhile;
+              endif;
+              wp_reset_postdata();
+        ?>
         </ul>
       </section>
       <section class="p-student-plan c-box--shadow" id="student-planning">

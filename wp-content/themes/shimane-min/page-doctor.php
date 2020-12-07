@@ -1,20 +1,6 @@
-<?php
-/*
-Template Name: doctor
-*/
-?>
-
 <?php get_header(); ?>
 <div class="l-wrapper l-wrapper--doctor">
   <main class="l-main--individual-page">
-    <?php
-      $the_query = subLoop(9);
-      $counter = '';
-      if ($the_query->have_posts()) :
-        while ($the_query->have_posts()) : $the_query->the_post();
-      ++$counter;
-    ?>
-    <?php if ($counter <= 1) : ?>
     <div class="p-pages-first-view p-pages-first-view--doctor">
       <h2 class="p-pages-first-view__heading p-pages-first-view__heading--doctor">
         「人を診る」ということ<br />
@@ -28,6 +14,14 @@ Template Name: doctor
           <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
         </p>
       </div>
+      <?php
+        $the_query = subLoop(3, "doctor");
+        $counter = '';
+        if ($the_query->have_posts()) :
+          while ($the_query->have_posts()) : $the_query->the_post();
+        ++$counter;
+      ?>
+      <?php if ($counter <= 1) : ?>
       <?php get_template_part('includes/jumbotron'); ?>
       <ul class="p-news__list">
         <?php else: ?>
