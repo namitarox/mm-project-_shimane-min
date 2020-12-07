@@ -3,7 +3,7 @@
     <h2 class="p-news-sidebar__title c-button">カテゴリで探す</h2>
     <ul class="p-news-sidebar__list">
       <?php
-	        // 親カテゴリーのものだけを一覧で取得
+            // 親カテゴリーのものだけを一覧で取得
 	          $args = array(
 	        	'parent' => 0,
 	        	'orderby' => 'term_order',
