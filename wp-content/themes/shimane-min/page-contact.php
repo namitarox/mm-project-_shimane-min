@@ -15,9 +15,7 @@
           <span>受付時間. 平日9時～17時</span>
         </p>
         <div>
-          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-          <?php the_content(); ?>
-          <?php endwhile; endif; ?>
+          <?php echo do_shortcode( '[contact-form-7 id="553" title="お問い合わせ"]' ); ?>
         </div>
       </div>
     </div>
