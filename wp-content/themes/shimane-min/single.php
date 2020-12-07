@@ -19,6 +19,7 @@
           endif;
         ?>
       </p>
+      <p class="p-news__back"><a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ一覧へ戻る<i class="fas fa-arrow-right fa-fw p-news__back-icon"></i></a></p>
       <ul class="p-news__sns-list">
         <li class="p-news__sns-item p-news__sns-item--twitter">
           <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-fw"></i><span>ツイート</span></a>

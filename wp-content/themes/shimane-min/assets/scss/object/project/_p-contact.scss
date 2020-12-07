@@ -121,6 +121,10 @@
     font-weight: 600;
     margin-top: 20px;
     text-align: center;
+
+    span + span {
+      margin-left: 10px;
+    }
   }
 
   &__caution {

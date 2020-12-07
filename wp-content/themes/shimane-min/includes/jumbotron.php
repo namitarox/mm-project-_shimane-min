@@ -4,7 +4,7 @@
       <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() );?>" alt="">
     </div>
     <p class="p-news__top-text">
-      <?php limitCharacter($post, 120); ?>
+      <?php limitCharacter($post, 150); ?>
     </p>
   </a>
 </div>

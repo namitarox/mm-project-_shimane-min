@@ -65,7 +65,7 @@ Template Name: dentist
         </div>
         <p class="p-dentist-recruit__button-wrap">
           <a
-            href=<?php echo home_url("/contact"); ?>
+            href="<?php echo esc_url( home_url( '/contact' ) ); ?>"
             class="p-dentist-recruit__button c-button"
           >
             お問い合わせ
@@ -105,7 +105,7 @@ Template Name: dentist
             </a>
         </p>
         <p class="u-ml--56">
-          <a href=<?php echo home_url("/contact"); ?> class="p-dentist-scholarship__button c-button">
+          <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="p-dentist-scholarship__button c-button">
           お問い合わせ
           </a>
         </p>

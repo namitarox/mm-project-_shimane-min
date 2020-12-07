@@ -856,6 +856,13 @@ a:hover {
   line-height: 1.74;
   margin-top: 20px;
 }
+.p-news__back {
+  margin-top: 60px;
+  text-align: right;
+}
+.p-news__back-icon {
+  color: #20b97b;
+}
 .p-news__sns-list {
   border-top: 1px solid #ccc;
   display: -webkit-box;
@@ -892,6 +899,9 @@ a:hover {
 }
 .p-news__sns-item--facebook {
   background-color: #1b77f2;
+}
+.p-news__sns-item--hatena {
+  background-color: #1c95e0;
 }
 
 .p-about {
@@ -1743,6 +1753,9 @@ a:hover {
   font-weight: 600;
   margin-top: 20px;
   text-align: center;
+}
+.p-contact__agree span + span {
+  margin-left: 10px;
 }
 .p-contact__caution {
   color: #f00;

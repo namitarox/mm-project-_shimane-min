@@ -156,6 +156,15 @@
     margin-top: 20px;
   }
 
+  &__back {
+    margin-top: 60px;
+    text-align: right;
+  }
+
+  &__back-icon {
+    color: $green;
+  }
+
   &__sns-list {
     border-top: 1px solid $lightGrey;
     display: -webkit-box;
@@ -197,5 +206,9 @@
 
   &__sns-item--facebook {
     background-color: $facebookColor;
+  }
+
+  &__sns-item--hatena {
+    background-color: $twitterColor;
   }
 }

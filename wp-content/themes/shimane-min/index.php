@@ -11,11 +11,11 @@
       <div class="p-news__heading-area">
         <h2 class="p-news__heading">お知らせ</h2>
         <p>
-          <a href=<?php echo home_url("/news"); ?> class="p-news__button c-button">お知らせ一覧</a>
+          <a href="<?php echo esc_url( home_url( '/news' ) ); ?>" class="p-news__button c-button">お知らせ一覧</a>
         </p>
       </div>
       <?php
-      $the_query = subLoop(10);
+      $the_query = subLoop(3);
       $counter = '';
       if ($the_query->have_posts()) :
         while ($the_query->have_posts()) : $the_query->the_post();
@@ -94,7 +94,7 @@
                   TEL. 0853-21-3360
                 </address>
                 <p>
-                      <a href=<?php echo home_url("/contact"); ?> class="p-summary__button--wide c-button">
+                      <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="p-summary__button--wide c-button">
                         インターネットによるお問い合わせ
                       </a>
                     </p>

@@ -98,24 +98,23 @@ function pagination($pages = '', $range = 2) {
 }
 
 function cancelAutoParagraph() {
-    remove_filter('the_content', 'wpautop');
-    remove_filter('the_excerpt', 'wpautop');
+  remove_filter('the_content', 'wpautop');
+  remove_filter('the_excerpt', 'wpautop');
 }
 
 function wpActiveFunction() {
-    add_theme_support('post-thumbnails');
-    cancelAutoParagraph();
-    addCustomPosts();
+  add_theme_support('post-thumbnails');
+  cancelAutoParagraph();
+  addCustomPosts();
 }
 
-
 function hooks() {
-    add_action('wp_enqueue_scripts', 'readAssets');
+  add_action('wp_enqueue_scripts', 'readAssets');
 }
 
 function init() {
-    wpActiveFunction();
-    hooks();
+  wpActiveFunction();
+  hooks();
 }
 
 

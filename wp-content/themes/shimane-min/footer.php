@@ -74,7 +74,7 @@
               <a href=<?php echo esc_url( home_url( '/doctor/#doctor-hospital-tour' ) ); ?>>┗病院見学・実習</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo home_url("/doctor#hospital-planning");?>>┗企画</a>
+              <a href=<?php echo esc_url( home_url( '/doctor/#hospital-planning' ) ); ?>>┗企画</a>
             </li>
             <li class="l-footer__nav-item">
               <a href=<?php echo esc_url( home_url( '/doctor/#doctor-support-center' ) ); ?>>┗学生サポート<br />

@@ -189,7 +189,7 @@
           </p>
           <p>
             <a
-              href=<?php echo home_url("/contact"); ?>
+              href="<?php echo esc_url( home_url( '/contact' ) ); ?>"
               class="p-scholarship-detail__button--wide c-button"
             >お問い合わせ
             </a>
