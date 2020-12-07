@@ -527,7 +527,7 @@ a:hover {
   justify-content: center;
   width: 160px;
 }
-.l-header-bottom__nav-item:first-of-type .l-header-bottom__nav-link {
+.l-header-bottom__nav-link--primary {
   align-items: center;
   background-color: #20b97b;
   border-radius: 5px;

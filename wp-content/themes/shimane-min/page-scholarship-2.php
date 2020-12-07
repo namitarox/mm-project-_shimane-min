@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: scholarship
-*/
-?>
-
 <?php get_header(); ?>
 <div class="l-wrapper l-wrapper--scholarship">
   <main class="l-main--individual-page c-box--shadow">
