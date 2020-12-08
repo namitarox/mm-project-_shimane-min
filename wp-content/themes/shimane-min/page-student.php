@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: student
-*/
-?>
-
 <?php get_header(); ?>
 <div class="l-wrapper l-wrapper--student">
   <main class="l-main--individual-page">

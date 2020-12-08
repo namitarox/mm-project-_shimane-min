@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: dentist
-*/
-?>
-
 <?php get_header(); ?>
 <div class="l-wrapper l-wrapper--dentist">
   <main class="l-main--individual-page">
