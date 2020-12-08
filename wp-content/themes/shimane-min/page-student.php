@@ -192,7 +192,7 @@ Template Name: student
           </li>
         </ul>
         <p class="p-student-plan__button-wrap">
-          <a href=<?php echo home_url("/scholarship-system"); ?>
+          <a href=<?php echo home_url("/scholarship"); ?>
           class="p-student-plan__button c-button"
                 >
             奨学金制度はこちら

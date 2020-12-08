@@ -48,19 +48,19 @@
           </ul>
           <ul class="l-footer__nav-list">
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/scholarship-system' ) ); ?>>〇奨学金をお考えのあなたへ</a>
+              <a href=<?php echo esc_url( home_url( '/scholarship' ) ); ?>>〇奨学金をお考えのあなたへ</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/scholarship-system/#scholarship-summary' ) ); ?>>┗概要</a>
+              <a href=<?php echo esc_url( home_url( '/scholarship/#scholarship-summary' ) ); ?>>┗概要</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/scholarship-system/#scholarship-doctor' ) ); ?>>┗医学生向け<br /><span class="u-ml--12">奨学金制度のご案内</span></a>
+              <a href=<?php echo esc_url( home_url( '/scholarship/#scholarship-doctor' ) ); ?>>┗医学生向け<br /><span class="u-ml--12">奨学金制度のご案内</span></a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/scholarship-system/#scholarship-flow' ) ); ?>>┗奨学金申請の流れ</a>
+              <a href=<?php echo esc_url( home_url( '/scholarship/#scholarship-flow' ) ); ?>>┗奨学金申請の流れ</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/scholarship-system/#scholarship-detail' ) ); ?>>┗奨学生になったら</a>
+              <a href=<?php echo esc_url( home_url( '/scholarship/#scholarship-detail' ) ); ?>>┗奨学生になったら</a>
             </li>
           </ul>
           <ul class="l-footer__nav-list">
