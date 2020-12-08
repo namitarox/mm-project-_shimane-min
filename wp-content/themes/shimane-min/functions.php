@@ -7,36 +7,6 @@ function readAssets() {
     wp_enqueue_style('my_styles', get_template_directory_uri().'/assets/css/style.css');
 }
 
-function addCustomPosts() {
-    /* カスタム投稿タイプを追加 */
-    add_action( 'init', 'create_post_type' );
-    function create_post_type() {
-        register_post_type( 'news', //カスタム投稿タイプ名を指定
-            array(
-                'labels' => array(
-                'name' => __( 'お知らせ' ),
-                'singular_name' => __( 'お知らせ' )
-            ),
-            'public' => true,
-            'has_archive' => true, /* アーカイブページを持つ */
-            'menu_position' =>5, //管理画面のメニュー順位
-            'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt',      'custom-fields' ,'comments' ),
-            )
-        );
-
-        register_taxonomy(
-        'news_category', /* タクソノミーの名前 */
-        'news', /* 使用するカスタム投稿タイプ名 */
-        array(
-          'hierarchical' => true, /* trueだと親子関係が使用可能。falseで使用不可 */
-          'update_count_callback' => '_update_post_term_count',
-          'label' => 'お知らせカテゴリー',
-          'singular_label' => 'お知らせカテゴリー',
-          'public' => true,
-          'show_ui' => true
-          ));
-    }
-}
 
 function limitCharacter($post, $limit) {
     $mbStrength = mb_strlen($post->post_content);
@@ -105,7 +75,6 @@ function cancelAutoParagraph() {
 function wpActiveFunction() {
   add_theme_support('post-thumbnails');
   cancelAutoParagraph();
-  addCustomPosts();
 }
 
 function hooks() {
