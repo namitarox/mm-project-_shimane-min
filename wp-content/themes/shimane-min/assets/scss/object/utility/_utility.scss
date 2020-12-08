@@ -1,0 +1,60 @@
+.u-text-align {
+  &--right {
+    text-align: right;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.u-mt {
+  &--10 {
+    margin-top: 10px;
+  }
+
+  &--20 {
+    margin-top: 20px;
+  }
+
+  &--30 {
+    margin-top: 30px;
+  }
+  &--40 {
+    margin-top: 40px;
+  }
+}
+
+.u-ml {
+  &--5 {
+    margin-left: 5px;
+  }
+
+  &--12 {
+    margin-left: 12px;
+  }
+
+  &--56 {
+    margin-left: 56px;
+  }
+}
+
+.u-mb {
+  &--20 {
+    margin-bottom: 20px;
+  }
+}
+
+.u-font {
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+
+  &--medium {
+    font-size: 14px;
+  }
+}

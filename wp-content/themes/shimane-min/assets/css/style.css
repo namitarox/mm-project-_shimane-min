@@ -1,0 +1,1879 @@
+@charset "UTF-8";
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*, ::before, ::after {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p, table, blockquote, address, pre, iframe, form, figure, dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  border-top-width: 1px;
+  box-sizing: content-box;
+  /* 1 */
+  clear: both;
+  color: inherit;
+  height: 0;
+  /* 1 */
+  margin: 0;
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img, embed, object, iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: inherit;
+  vertical-align: middle;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button, input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button, select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+button[disabled], [type="button"][disabled], [type="reset"][disabled], [type="submit"][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type="search"] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td, th {
+  padding: 0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  background-color: #f8f8ff;
+  color: #333;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", Osaka, sans-serif;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+.l-header {
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  min-width: 1120px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.l-header-top {
+  background-color: #20b97b;
+  color: #fff;
+  font-size: 14px;
+}
+.l-header-top__inner {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  height: 22px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+.l-header-top__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.l-header-top__link-item + .l-header-top__link-item {
+  margin-left: 30px;
+}
+
+.l-header-bottom__inner {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  height: 91px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+.l-header-bottom__logo {
+  width: 294px;
+}
+.l-header-bottom__nav-list {
+  align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  height: 60px;
+}
+.l-header-bottom__nav-item:nth-of-type(n + 3) {
+  border-left: 1px solid #999;
+}
+.l-header-bottom__nav-link {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #20b97b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  height: 45px;
+  justify-content: center;
+  width: 160px;
+}
+.l-header-bottom__nav-link--primary {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  height: 60px;
+  justify-content: center;
+  padding: 0 40px;
+  width: 160px;
+}
+
+.l-first-view {
+  background-image: url(/wp-content/themes/shimane-min/assets/images/01_top_page/top-page-first-view.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.l-first-view__catch-copy {
+  font-family: "Noto Serif JP", serif;
+  font-size: 28px;
+  font-weight: 500;
+  left: 40px;
+  letter-spacing: 0.05em;
+  line-height: 1.36;
+  position: absolute;
+  top: 193px;
+}
+
+.l-wrapper {
+  min-width: 1120px;
+  width: 1120px;
+}
+.l-wrapper--include-side {
+  display: flex;
+  margin: 50px auto;
+  min-width: 980px;
+  width: 980px;
+}
+.l-wrapper--scholarship {
+  margin: 168px auto 55px;
+}
+.l-wrapper--doctor {
+  margin: 168px auto 75px;
+}
+.l-wrapper--dentist {
+  margin: 168px auto 55px;
+}
+.l-wrapper--student {
+  margin: 168px auto 75px;
+}
+.l-wrapper--nurse {
+  margin: 168px auto 45px;
+  min-width: 980px;
+  width: 980px;
+}
+.l-wrapper--news {
+  margin: 168px auto 60px;
+}
+.l-wrapper--contact {
+  margin: 168px auto 75px;
+}
+
+.l-main {
+  max-width: 700px;
+  width: 100%;
+}
+.l-main--individual-page {
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+.l-main--scholarship {
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.l-sidebar {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 20px;
+  max-width: 260px;
+  width: 100%;
+}
+
+.l-footer {
+  background-color: #20b97b;
+  min-width: 1120px;
+  padding: 40px 0;
+}
+.l-footer__inner {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+.l-footer__box {
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 292px;
+}
+.l-footer__text-box {
+  padding: 10px 10px 0;
+}
+.l-footer__text-box address {
+  font-size: 14px;
+  line-height: 1.38;
+}
+.l-footer__text-box + .l-footer__text-box {
+  border-top: 1px solid #999;
+  margin-top: 10px;
+}
+.l-footer__telephone {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+.l-footer__nav-area {
+  color: #fff;
+  margin-left: 25px;
+  position: relative;
+  width: calc(100% - 292px);
+}
+.l-footer__nav-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.l-footer__nav-list {
+  line-height: 1.5;
+}
+.l-footer__nav-item {
+  font-size: 12px;
+  max-width: 126px;
+}
+.l-footer__nav-item a:hover {
+  text-decoration: underline;
+}
+.l-footer__bottom-contents {
+  bottom: 0;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+.l-footer__copyright {
+  align-items: flex-end;
+  -webkit-box-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  font-size: 12px;
+}
+.l-footer__sns-links {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 126px;
+}
+.l-footer__sns-icon {
+  font-size: 22px;
+  width: 22px;
+}
+.l-footer__sns-icon + .l-footer__sns-icon {
+  margin-left: 30px;
+}
+
+.p-news {
+  background-color: #fff;
+  padding: 35px 15px 15px 15px;
+  width: 100%;
+}
+.p-news--news-page {
+  padding: 35px 15px 50px 15px;
+}
+.p-news--individual-page {
+  margin-top: 20px;
+}
+.p-news__heading-area {
+  align-items: center;
+  border-bottom: 2px solid #20b97b;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.p-news__heading {
+  color: #20b97b;
+  font-size: 26px;
+}
+.p-news__button {
+  height: 30px;
+  width: 175px;
+}
+.p-news__button--news-page {
+  background-color: #20b97b;
+  border-radius: 5px;
+  color: #fff;
+  height: 30px;
+  padding: 5px 10px;
+}
+.p-news__button--small {
+  height: 30px;
+  min-width: 120px;
+}
+.p-news__button--single {
+  margin: 10px 0 0 auto;
+}
+.p-news__top-item {
+  margin: 20px auto 0;
+  width: 96%;
+}
+.p-news__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+.p-news__top-inner:hover .p-news__top-text {
+  color: #20b97b;
+  text-decoration: underline;
+}
+.p-news__top-img {
+  height: 157px;
+  width: 312px;
+}
+.p-news__top-img--individual-page {
+  height: 185px;
+  object-fit: cover;
+  width: 40%;
+}
+.p-news__top-text {
+  line-height: 1.49;
+  margin-left: 30px;
+  width: 50%;
+}
+.p-news__list {
+  margin-top: 20px;
+}
+.p-news__item {
+  align-items: center;
+  border-top: 1px solid #ccc;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  height: 100%;
+  min-height: 60px;
+  padding: 0 10px;
+}
+.p-news__item--news-page {
+  min-height: 70px;
+}
+.p-news__item--news-page:first-of-type {
+  border-top: none;
+}
+.p-news__item-title {
+  height: 100%;
+  margin-left: 40px;
+}
+.p-news__item-title a {
+  align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  height: 60px;
+  max-height: 70px;
+}
+.p-news__item-title a:hover {
+  color: #20b97b;
+  text-decoration: underline;
+}
+.p-news__item-title--news-page {
+  height: 100%;
+  margin-left: 10px;
+}
+.p-news__item-title--news-page a {
+  align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  height: 60px;
+  max-height: 70px;
+}
+.p-news__item-title--news-page a:hover {
+  color: #20b97b;
+  text-decoration: underline;
+}
+.p-news__article {
+  line-height: 1.74;
+  margin-top: 20px;
+}
+.p-news__back {
+  margin-top: 60px;
+  text-align: right;
+}
+.p-news__back-icon {
+  color: #20b97b;
+}
+.p-news__sns-list {
+  border-top: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.p-news__sns-item {
+  border-radius: 5px;
+  margin: 0 0 0 auto;
+}
+.p-news__sns-item a {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  font-size: 11px;
+  height: 20px;
+  justify-content: center;
+  min-width: 90px;
+  width: 100%;
+}
+.p-news__sns-item + .p-news__sns-item {
+  margin-left: 20px;
+}
+.p-news__sns-item--twitter {
+  background-color: #1c95e0;
+}
+.p-news__sns-item--facebook {
+  background-color: #1b77f2;
+}
+.p-news__sns-item--hatena {
+  background-color: #1c95e0;
+}
+
+.p-about {
+  background-color: #fff;
+  margin: 20px 0 0 0;
+  padding: 30px 15px;
+}
+.p-about__summary {
+  line-height: 1.63;
+  margin-top: 20px;
+}
+
+.p-platform {
+  margin: 20px 0 0 0;
+}
+.p-platform__text-wrap {
+  background-color: #f8f8ff;
+  border: 0.3px solid #d2d2d2;
+  border-radius: 10px;
+  line-height: 1.74;
+  margin-top: 10px;
+  padding: 9px;
+}
+
+.p-summary {
+  margin-top: 30px;
+}
+.p-summary--scholarship {
+  margin: 25px 10px 0;
+}
+.p-summary__table {
+  line-height: 1.74;
+  margin: 20px auto 0;
+  width: 96%;
+}
+.p-summary__table--scholarship {
+  line-height: 1.74;
+  margin-top: 20px;
+  width: 100%;
+}
+.p-summary__table-title {
+  background-color: #f2f0ec;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 20%;
+}
+.p-summary__table-title--scholarship {
+  background-color: #f2f0ec;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: center;
+  width: 15%;
+}
+.p-summary__table-content {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 80%;
+}
+.p-summary__table-content--scholarship {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 85%;
+}
+.p-summary__map iframe {
+  border: 0;
+  height: 186px;
+  width: 100%;
+}
+.p-summary__map + .p-summary__map {
+  margin-top: 20px;
+}
+.p-summary__text {
+  margin-top: 20px;
+}
+.p-summary iframe {
+  border: 0;
+  height: 186px;
+  width: 100%;
+}
+.p-summary__button {
+  height: 40px;
+  width: 208px;
+}
+.p-summary__button--wide {
+  height: 40px;
+  width: 336px;
+}
+
+.p-office {
+  margin-top: 40px;
+}
+.p-office__wrap {
+  margin: 0 auto;
+  width: 96%;
+}
+.p-office__text {
+  margin-top: 20px;
+}
+.p-office__table {
+  margin-top: 20px;
+}
+.p-office__table + .p-office__table {
+  margin-top: 50px;
+}
+.p-office__img {
+  height: 300px;
+}
+.p-office__img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.p-office__list {
+  margin-top: 20px;
+}
+.p-office__item-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1.8fr 1fr;
+  grid-template-columns: 2fr 1.8fr 1fr;
+  line-height: 1.74;
+}
+
+.p-facebook {
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+
+.p-line {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+}
+.p-line__qr-code {
+  border: 1px solid #20b97b;
+  margin: 0 auto;
+  width: 230px;
+}
+.p-line__text {
+  line-height: 1.74;
+  margin-top: 20px;
+  text-align: center;
+}
+.p-line__text--grid {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.p-line__img {
+  width: 50px;
+}
+.p-line__id {
+  line-height: 1.74;
+  margin-left: 10px;
+}
+
+.p-pages-first-view {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  position: relative;
+}
+.p-pages-first-view--scholarship {
+  background-image: url(/wp-content/themes/shimane-min/assets/images/02_scholarship/scholarship-first-view.jpg);
+}
+.p-pages-first-view--doctor {
+  background-image: url(/wp-content/themes/shimane-min/assets/images/03_doctor/doctor-first-view.jpg);
+}
+.p-pages-first-view--dentist {
+  background-image: url(/wp-content/themes/shimane-min/assets/images/04_dentist/dentist-first-view.jpg);
+}
+.p-pages-first-view--student {
+  background-image: url(/wp-content/themes/shimane-min/assets/images/06_student/student-first-view.jpg);
+}
+.p-pages-first-view--nurse {
+  background-image: url(/wp-content/themes/shimane-min/assets/images/05_nurse/nurse-first-view.jpg);
+}
+.p-pages-first-view__heading {
+  font-family: "Noto Serif JP", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.43;
+  position: absolute;
+}
+.p-pages-first-view__heading--scholarship {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.p-pages-first-view__heading--doctor {
+  left: 30px;
+  top: 40px;
+}
+.p-pages-first-view__heading--dentist {
+  bottom: 20px;
+  left: 30px;
+}
+.p-pages-first-view__heading--student {
+  left: 492px;
+  top: 45%;
+}
+.p-pages-first-view__heading--nurse {
+  bottom: 15px;
+  right: 0;
+  text-align: right;
+}
+
+.p-scholarship {
+  background-color: #fff;
+  padding: 30px 20px;
+}
+
+.p-scholarship-lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-scholarship-lead__img {
+  margin: 0 auto;
+  width: 41%;
+}
+.p-scholarship-lead__img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.p-scholarship-lead__text-wrap {
+  line-height: 1.63;
+  margin-left: 30px;
+  width: calc(100% - 41% - 30px);
+}
+.p-scholarship-lead__name {
+  margin: 0 0 0 auto;
+  width: 50%;
+}
+
+.p-faq {
+  margin: 35px 10px 0;
+}
+.p-faq__list {
+  margin: 20px auto 0;
+  max-width: 870px;
+  width: 100%;
+}
+.p-faq__list-item {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.p-faq__list-item + .p-faq__list-item {
+  margin-top: 20px;
+}
+.p-faq__question {
+  color: #20b97b;
+  font-weight: 600;
+}
+
+.p-scholarship-flow {
+  margin: 35px 10px 0;
+}
+.p-scholarship-flow__box {
+  background-color: #f8f8ff;
+  margin-top: 15px;
+  max-width: 905px;
+  padding: 25px 20px 10px;
+  width: 100%;
+}
+.p-scholarship-flow__grid {
+  align-items: baseline;
+  -webkit-box-align: baseline;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 845px;
+  width: 100%;
+}
+.p-scholarship-flow__grid-item {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 7px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  line-height: 1.5;
+  min-width: 106px;
+  padding: 10px 10px;
+}
+.p-scholarship-flow__arrow {
+  font-size: 27px;
+  padding: 0 0 0 16px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.p-scholarship-flow__arrow::before {
+  border: 12px solid transparent;
+  border-left: 18px solid #20b97b;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 24px;
+  left: 24px;
+  width: 24px;
+}
+.p-scholarship-flow__arrow::before, .p-scholarship-flow__arrow::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+}
+.p-scholarship-flow__caution {
+  line-height: 1.75;
+  margin-top: 15px;
+}
+
+.p-scholarship-detail {
+  margin: 35px 10px 0;
+}
+.p-scholarship-detail__text {
+  line-height: 1.74;
+  margin-top: 20px;
+}
+.p-scholarship-detail__button-wrap {
+  margin: 20px 70px 0 0;
+}
+.p-scholarship-detail__button {
+  height: 40px;
+  margin: 0 0 0 auto;
+  width: 287px;
+}
+.p-scholarship-detail__button--wide {
+  height: 40px;
+  width: 362px;
+}
+.p-scholarship-detail__buttons {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 65px auto 0;
+  max-width: 780px;
+  width: 100%;
+}
+
+.p-doctor {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px 20px 50px;
+}
+
+.p-training__text {
+  margin-top: 20px;
+}
+.p-training__buttons {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  width: 70%;
+}
+.p-training__button {
+  height: 40px;
+  width: 287px;
+}
+
+.p-hospital-tour {
+  margin-top: 40px;
+}
+.p-hospital-tour__text {
+  line-height: 1.63;
+  margin-top: 20px;
+}
+
+.p-hospital-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 840px;
+  width: 100%;
+}
+.p-hospital-list--nurse-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+.p-hospital-list__item {
+  width: 240px;
+}
+.p-hospital-list__item:not(:nth-of-type(3n + 1)) {
+  margin-left: 60px;
+}
+.p-hospital-list__item:nth-of-type(n + 4) {
+  margin-top: 40px;
+}
+.p-hospital-list__item--nurse-page {
+  width: calc(50% - 35px);
+}
+.p-hospital-list__item--nurse-page:nth-of-type(n + 3) {
+  margin-top: 35px;
+}
+.p-hospital-list__item--nurse-page:nth-of-type(2n) {
+  margin-left: 70px;
+}
+.p-hospital-list__img {
+  height: 180px;
+  position: relative;
+}
+.p-hospital-list__coming-soon {
+  color: #fff;
+  left: 29%;
+  position: absolute;
+  top: 45%;
+}
+.p-hospital-list__text {
+  line-height: 1.73;
+  margin-top: 10px;
+}
+.p-hospital-list__button-wrap {
+  margin-top: 10px;
+}
+.p-hospital-list__button {
+  height: 44px;
+  width: 100%;
+}
+.p-hospital-list__button--disabled:not(:root) {
+  background-color: #999;
+  height: 44px;
+  pointer-events: none;
+  width: 100%;
+}
+
+.p-planning {
+  margin-top: 30px;
+}
+.p-planning__text {
+  margin-top: 20px;
+}
+
+.p-support-center {
+  margin-top: 40px;
+}
+.p-support-center--nurse-page {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px 20px 40px 20px;
+}
+.p-support-center__text {
+  line-height: 1.73;
+  margin-top: 25px;
+}
+.p-support-center__banner-list {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 80px;
+  max-width: 936px;
+  width: 100%;
+}
+.p-support-center__banner {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 220px;
+}
+
+.p-dentist-recruit {
+  background-color: #fff;
+  padding: 30px 20px 55px;
+}
+.p-dentist-recruit__contents {
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-recruit__target-list {
+  margin-top: 20px;
+}
+.p-dentist-recruit__target-item {
+  line-height: 1.74;
+}
+.p-dentist-recruit__place {
+  line-height: 1.74;
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-recruit__conditions {
+  line-height: 1.74;
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-recruit__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.p-dentist-recruit__grid-item + .p-dentist-recruit__grid-item {
+  margin-left: 40px;
+}
+.p-dentist-recruit__grid-item {
+  display: flex;
+}
+.p-dentist-recruit__link {
+  text-decoration: underline;
+}
+.p-dentist-recruit__button-wrap {
+  margin-top: 20px;
+}
+.p-dentist-recruit__button {
+  height: 40px;
+  margin: 0 auto;
+  width: 365px;
+}
+
+.p-dentist-scholarship {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px 20px 55px;
+}
+.p-dentist-scholarship__contents {
+  margin: 20px auto 0;
+  width: 98%;
+}
+.p-dentist-scholarship__purpose {
+  line-height: 1.63;
+  margin-top: 20px;
+}
+.p-dentist-scholarship__amount {
+  line-height: 1.74;
+  margin-top: 20px;
+}
+.p-dentist-scholarship__caution {
+  margin-top: 20px;
+}
+.p-dentist-scholarship__button {
+  height: 40px;
+  margin: 0 auto;
+  width: 365px;
+}
+.p-dentist-scholarship__buttons {
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 40px auto 0;
+  width: 100%;
+}
+
+.p-student {
+  margin-top: 15px;
+}
+
+.p-student-plan {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 35px 15px 35px 15px;
+}
+.p-student-plan__text {
+  margin-top: 10px;
+}
+.p-student-plan__button-wrap {
+  margin-top: 40px;
+}
+.p-student-plan__button {
+  height: 52px;
+  margin: 0 auto;
+  width: 362px;
+}
+
+.p-pagination {
+  margin: 30px auto 0;
+}
+.p-pagination__list {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+.p-pagination__item {
+  color: #999;
+  font-size: 22px;
+}
+.p-pagination__item:hover {
+  color: #20b97b;
+}
+.p-pagination__item.is-active {
+  color: #20b97b;
+}
+.p-pagination__item + .p-pagination__item {
+  margin-left: 15px;
+}
+.p-pagination__item--arrow {
+  font-size: 14px;
+}
+
+.p-news-sidebar__contents {
+  background-color: #fff;
+  padding: 15px;
+}
+.p-news-sidebar__contents + .p-news-sidebar__contents {
+  margin-top: 20px;
+}
+.p-news-sidebar__title {
+  height: 75px;
+  width: 230px;
+}
+.p-news-sidebar__list-item {
+  height: 80px;
+}
+.p-news-sidebar__list-item a {
+  align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  height: 100%;
+  padding-left: 30px;
+  width: 100%;
+}
+.p-news-sidebar__list-item a:hover {
+  color: #20b97b;
+  text-decoration: underline;
+}
+.p-news-sidebar__list-item + .p-news-sidebar__list-item {
+  border-top: 1px solid #ccc;
+}
+
+.p-hospital-introduction {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 35px 15px 70px 15px;
+}
+.p-hospital-introduction__list {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.p-hospital-introduction__list-item p {
+  line-height: 1.74;
+  text-align: center;
+}
+.p-hospital-introduction__list-item + .p-hospital-introduction__list-item {
+  margin-top: 20px;
+}
+.p-hospital-introduction__video {
+  height: 340px;
+  width: 640px;
+}
+.p-hospital-introduction__video-title {
+  margin-top: 20px;
+}
+
+.p-nurse-sidebar {
+  background-color: #fff;
+  padding: 30px 10px 10px 10px;
+}
+.p-nurse-sidebar__text {
+  line-height: 1.74;
+  margin-top: 20px;
+  text-align: center;
+}
+.p-nurse-sidebar__list {
+  margin-top: 20px;
+}
+.p-nurse-sidebar__list-item + .p-nurse-sidebar__list-item {
+  margin-top: 10px;
+}
+.p-nurse-sidebar__item-wrap {
+  height: 180px;
+}
+.p-nurse-sidebar__item-text-wrap {
+  line-height: 1.74;
+  margin-top: 10px;
+}
+.p-nurse-sidebar__item-text-wrap address {
+  color: #666;
+  font-size: 14px;
+}
+.p-nurse-sidebar__button-wrap {
+  margin-top: 5px;
+}
+.p-nurse-sidebar__button {
+  height: 44px;
+  width: 100%;
+}
+
+.p-contact {
+  background-color: #fff;
+  padding: 35px 55px 55px 55px;
+}
+.p-contact__wrap {
+  margin: 0 auto;
+  max-width: 850px;
+  width: 100%;
+}
+.p-contact__text {
+  line-height: 1.74;
+  margin-top: 20px;
+}
+.p-contact__tel {
+  color: #f00;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.p-contact__tel span {
+  font-size: 12px;
+}
+.p-contact form {
+  margin-top: 40px;
+}
+.p-contact__table {
+  width: 100%;
+}
+.p-contact__table-column {
+  height: 50px;
+}
+.p-contact__table-title {
+  background-color: #f2f0ec;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  vertical-align: middle;
+  width: 205px;
+}
+.p-contact__table-content {
+  border: 1px solid #ccc;
+  line-height: 1.74;
+  padding: 10px 15px;
+  vertical-align: middle;
+  width: calc(100% - 205px);
+}
+.p-contact__required {
+  color: #f00;
+}
+.p-contact__check-list {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.p-contact__check-list--right {
+  align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+}
+.p-contact__check-item input {
+  vertical-align: -1px;
+}
+.p-contact__check-item + .p-contact__check-item {
+  margin-left: 15px;
+}
+.p-contact__input--small {
+  border: 1px solid #ccc;
+  width: 246px;
+}
+.p-contact__input--large {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.p-contact textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.p-contact__detail {
+  margin-top: 40px;
+}
+.p-contact__detail-list {
+  margin-top: 50px;
+}
+.p-contact__detail-item {
+  line-height: 1.7;
+}
+.p-contact__detail-item + .p-contact__detail-item {
+  margin-top: 20px;
+}
+.p-contact__agree {
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+.p-contact__agree span + span {
+  margin-left: 10px;
+}
+.p-contact__caution {
+  color: #f00;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+  text-align: center;
+}
+.p-contact__buttons {
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.p-contact__button-wrap + .p-contact__button-wrap {
+  margin-left: 80px;
+}
+.p-contact__button {
+  height: 60px;
+  width: 240px;
+}
+
+.p-page-top {
+  bottom: 0;
+  position: fixed;
+  right: 25px;
+  width: 84.5px;
+}
+
+.c-heading--border-bottom {
+  border-bottom: 2px solid #20b97b;
+  color: #20b97b;
+  font-size: 26px;
+  line-height: 1.4;
+  padding-bottom: 25px;
+}
+.c-heading--border-left {
+  align-items: center;
+  border-left: 4px solid #20b97b;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  font-size: 20px;
+  height: 48px;
+  padding-left: 15px;
+}
+
+.c-box--shadow {
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.c-button {
+  align-items: center;
+  background-color: #20b97b;
+  border-radius: 5px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c-grid {
+  display: flex;
+}
+
+.u-text-align--right {
+  text-align: right;
+}
+.u-text-align--center {
+  text-align: center;
+}
+
+.u-mt--10 {
+  margin-top: 10px;
+}
+.u-mt--20 {
+  margin-top: 20px;
+}
+.u-mt--30 {
+  margin-top: 30px;
+}
+.u-mt--40 {
+  margin-top: 40px;
+}
+
+.u-ml--5 {
+  margin-left: 5px;
+}
+.u-ml--12 {
+  margin-left: 12px;
+}
+.u-ml--56 {
+  margin-left: 56px;
+}
+
+.u-mb--20 {
+  margin-bottom: 20px;
+}
+
+.u-font--bold {
+  font-weight: 600;
+}
+.u-font--small {
+  font-size: 12px;
+}
+.u-font--medium {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

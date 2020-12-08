@@ -1,0 +1,28 @@
+.p-scholarship-lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto 0;
+  width: 98%;
+
+  &__img {
+    margin: 0 auto;
+    width: 41%;
+
+    img {
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+
+  &__text-wrap {
+    line-height: 1.63;
+    margin-left: 30px;
+    width: calc(100% - 41% - 30px);
+  }
+
+  &__name {
+    margin: 0 0 0 auto;
+    width: 50%;
+  }
+}

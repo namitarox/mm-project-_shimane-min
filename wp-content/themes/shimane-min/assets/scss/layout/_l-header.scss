@@ -1,0 +1,111 @@
+.l-header {
+  background-color: $white;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  min-width: 1120px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.l-header-top {
+  background-color: $green;
+  color: $white;
+  font-size: 14px;
+
+  &__inner {
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    height: 22px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+  }
+
+  &__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  &__link-item + &__link-item {
+    margin-left: 30px;
+  }
+}
+
+.l-header-bottom {
+  &__inner {
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    height: 91px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1120px;
+    width: 100%;
+  }
+
+  &__logo {
+    width: 294px;
+  }
+
+  &__nav-list {
+    align-items: center;
+    -webkit-box-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    height: 60px;
+  }
+
+  &__nav-item:nth-of-type(n + 3) {
+    border-left: 1px solid $grey;
+  }
+
+  &__nav-link {
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    color: $green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    height: 45px;
+    justify-content: center;
+    width: 160px;
+  }
+
+  &__nav-link--primary {
+    align-items: center;
+    background-color: $green;
+    border-radius: 5px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    color: $white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    height: 60px;
+    justify-content: center;
+    padding: 0 40px;
+    width: 160px;
+  }
+}
