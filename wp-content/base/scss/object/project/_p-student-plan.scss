@@ -1,0 +1,19 @@
+.p-student-plan {
+  background-color: $white;
+  margin-top: 20px;
+  padding: 35px 15px 35px 15px;
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  &__button-wrap {
+    margin-top: 40px;
+  }
+
+  &__button {
+    height: 52px;
+    margin: 0 auto;
+    width: 362px;
+  }
+}

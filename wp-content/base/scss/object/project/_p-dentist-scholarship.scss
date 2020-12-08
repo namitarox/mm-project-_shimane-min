@@ -1,0 +1,41 @@
+.p-dentist-scholarship {
+  background-color: $white;
+  margin-top: 20px;
+  padding: 30px 20px 55px;
+
+  &__contents {
+    margin: 20px auto 0;
+    width: 98%;
+  }
+
+  &__purpose {
+    line-height: 1.63;
+    margin-top: 20px;
+  }
+
+  &__amount {
+    line-height: 1.74;
+    margin-top: 20px;
+  }
+
+  &__caution {
+    margin-top: 20px;
+  }
+
+  &__button {
+    height: 40px;
+    margin: 0 auto;
+    width: 365px;
+  }
+
+  &__buttons {
+    -webkit-box-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 40px auto 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.l-main {
+  max-width: 700px;
+  width: 100%;
+
+  &--individual-page {
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+  }
+
+  &--scholarship {
+    -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  }
+}

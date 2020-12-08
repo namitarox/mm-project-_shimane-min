@@ -1,0 +1,57 @@
+.p-dentist-recruit {
+  background-color: $white;
+  padding: 30px 20px 55px;
+
+  &__contents {
+    margin: 20px auto 0;
+    width: 98%;
+  }
+
+  &__target-list {
+    margin-top: 20px;
+  }
+
+  &__target-item {
+    line-height: 1.74;
+  }
+
+  &__place {
+    line-height: 1.74;
+    margin: 20px auto 0;
+    width: 98%;
+  }
+
+  &__conditions {
+    line-height: 1.74;
+    margin: 20px auto 0;
+    width: 98%;
+  }
+
+  &__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  &__grid-item + &__grid-item {
+    margin-left: 40px;
+  }
+
+  &__grid-item {
+    display: flex;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+
+  &__button-wrap {
+    margin-top: 20px;
+  }
+
+  &__button {
+    height: 40px;
+    margin: 0 auto;
+    width: 365px;
+  }
+}

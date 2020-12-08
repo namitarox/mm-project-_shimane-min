@@ -1,0 +1,156 @@
+.p-contact {
+  background-color: $white;
+  padding: 35px 55px 55px 55px;
+
+  &__wrap {
+    margin: 0 auto;
+    max-width: 850px;
+    width: 100%;
+  }
+
+  &__text {
+    line-height: 1.74;
+    margin-top: 20px;
+  }
+
+  &__tel {
+    color: $red;
+    font-size: 22px;
+    margin-top: 20px;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  &__form {
+    margin-top: 40px;
+  }
+
+  &__table {
+    width: 100%;
+  }
+
+  &__table-column {
+    height: 50px;
+  }
+
+  &__table-title {
+    background-color: $tableGrey;
+    border: 1px solid $lightGrey;
+    padding: 10px 15px;
+    vertical-align: middle;
+    width: 205px;
+  }
+
+  &__table-content {
+    border: 1px solid $lightGrey;
+    line-height: 1.74;
+    padding: 10px 15px;
+    vertical-align: middle;
+    width: calc(100% - 205px);
+  }
+
+  &__required {
+    color: $red;
+  }
+
+  &__check-list {
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  &__check-list--right {
+    align-items: center;
+    -webkit-box-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+  }
+
+  &__check-item {
+    input {
+      vertical-align: -1px;
+    }
+
+    span {
+      margin-left: 3px;
+    }
+  }
+
+  &__check-item + &__check-item {
+    margin-left: 15px;
+  }
+
+  &__input--small {
+    border: 1px solid $lightGrey;
+    width: 246px;
+  }
+
+  &__input--large {
+    border: 1px solid $lightGrey;
+    width: 100%;
+  }
+
+  textarea {
+    border: 1px solid $lightGrey;
+    width: 100%;
+  }
+
+  &__detail {
+    margin-top: 40px;
+  }
+
+  &__detail-list {
+    margin-top: 50px;
+  }
+
+  &__detail-item {
+    line-height: 1.7;
+  }
+
+  &__detail-item + &__detail-item {
+    margin-top: 20px;
+  }
+
+  &__agree {
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &__caution {
+    color: $red;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  &__buttons {
+    -webkit-box-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  &__button-wrap + &__button-wrap {
+    margin-left: 80px;
+  }
+
+  &__button {
+    height: 60px;
+    width: 240px;
+  }
+}

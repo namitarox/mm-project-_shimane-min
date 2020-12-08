@@ -1,0 +1,64 @@
+.p-pages-first-view {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  position: relative;
+
+  &--scholarship {
+    background-image: url(/wp-content/base/images/02_scholarship/scholarship-first-view.jpg);
+  }
+
+  &--doctor {
+    background-image: url(/wp-content/base/images/03_doctor/doctor-first-view.jpg);
+  }
+
+  &--dentist {
+    background-image: url(/wp-content/base/images/04_dentist/dentist-first-view.jpg);
+  }
+
+  &--student {
+    background-image: url(/wp-content/base/images/06_high-school/high-school-first-view.jpg);
+  }
+
+  &--nurse {
+    background-image: url(/wp-content/base/images/05_nurse/nurse-first-view.jpg);
+  }
+
+  &__heading {
+    font-family: $catchCopyFont;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.43;
+    position: absolute;
+  }
+
+  &__heading--scholarship {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  &__heading--doctor {
+    left: 30px;
+    top: 40px;
+  }
+
+  &__heading--dentist {
+    bottom: 20px;
+    left: 30px;
+  }
+
+  &__heading--student {
+    left: 492px;
+    top: 45%;
+  }
+
+  &__heading--nurse {
+    bottom: 15px;
+    right: 0;
+    text-align: right;
+  }
+}

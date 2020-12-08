@@ -1,0 +1,78 @@
+.p-hospital-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 840px;
+  width: 100%;
+
+  &--nurse-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &__item {
+    width: 240px;
+
+    &:not(:nth-of-type(3n + 1)) {
+      margin-left: 60px;
+    }
+
+    &:nth-of-type(n + 4) {
+      margin-top: 40px;
+    }
+  }
+
+  &__item--nurse-page {
+    width: calc(50% - 35px);
+
+    &:nth-of-type(n + 3) {
+      margin-top: 35px;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 70px;
+    }
+  }
+
+  &__img {
+    height: 180px;
+    position: relative;
+  }
+
+  &__coming-soon {
+    color: $white;
+    left: 29%;
+    position: absolute;
+    top: 45%;
+  }
+
+  &__text {
+    line-height: 1.73;
+    margin-top: 10px;
+  }
+
+  &__button-wrap {
+    margin-top: 10px;
+  }
+
+  &__button {
+    height: 44px;
+    width: 100%;
+
+    &--disabled:not(:root) {
+      background-color: $grey;
+      height: 44px;
+      pointer-events: none;
+      width: 100%;
+    }
+  }
+}
