@@ -51,7 +51,7 @@
       </li>
       <li class="p-nurse-sidebar__list-item">
         <div class="p-nurse-sidebar__item-wrap">
-          <img src="<?php echo get_template_directory_uri();?>/assets/images/05_nurse/coming-soon.png" alt="斐川生協病院" />
+          <img src="<?php echo get_template_directory_uri();?>/assets/images/05_nurse/hikawa-hospital.jpg" alt="斐川生協病院" />
         </div>
         <div class="p-nurse-sidebar__item-text-wrap">
           <p>斐川生協病院</p>
