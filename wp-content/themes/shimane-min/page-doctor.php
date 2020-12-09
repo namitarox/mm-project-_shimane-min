@@ -242,9 +242,9 @@
         </ul>
       </section>
       <section class="p-support-center" id="doctor-support-center">
-        <h3 class="c-heading--border-left">学生医サポートセンターの紹介</h3>
+        <h3 class="c-heading--border-left">医系学生サポートセンターの紹介</h3>
         <p class="p-support-center__text">
-              サポートセンターは医系学生が自由に活用できる交流スペースです。コピー機や図書コーナーを利用できます。<br />
+              医系学生サポートセンターは医系学生が自由に活用できる交流スペースです。コピー機や図書コーナーを利用できます。<br>
               ２階には休息、テスト勉強、打ち合わせ等に使用できる部屋があります。
             </p>
         <ul class="p-hospital-list u-mt--40">
