@@ -1106,7 +1106,8 @@ a:hover {
   top: 40px;
 }
 .p-pages-first-view__heading--dentist {
-  bottom: 20px;
+  bottom: 65px;
+  color: #000;
   left: 30px;
 }
 .p-pages-first-view__heading--student {
