@@ -1,5 +1,5 @@
 <div class="p-page-top js-page-top">
-  <a href="">
+  <a href="#">
     <img src="<?php echo get_template_directory_uri();?>/assets/images/01_top_page/scroll-up.png" alt="ページトップへ" />
   </a>
 </div>
