@@ -172,9 +172,8 @@
         </p>
         <p class="p-scholarship-detail__button-wrap">
           <a
-            href=""
+            href="<?php echo esc_url( home_url( '/doctor#doctor-planning' ) ); ?>"
             class="p-scholarship-detail__button c-button"
-            target="_blank"
             >詳しく見る</a
           >
         </p>
