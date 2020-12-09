@@ -10,7 +10,7 @@
     <ul class="p-nurse-sidebar__list">
       <li class="p-nurse-sidebar__list-item">
         <div class="p-nurse-sidebar__item-wrap">
-          <img src="<?php echo get_template_directory_uri();?>/assets/images/05_nurse/matsue-hospital.jpg" alt="総合病院松江生協病院" />
+          <img src="<?php echo get_template_directory_uri();?>/assets/images/05_nurse/matsue-hospital.png" alt="総合病院松江生協病院" />
         </div>
         <div class="p-nurse-sidebar__item-text-wrap">
           <p>総合病院松江生協病院</p>
@@ -30,7 +30,7 @@
       </li>
       <li class="p-nurse-sidebar__list-item">
         <div class="p-nurse-sidebar__item-wrap">
-          <img src="<?php echo get_template_directory_uri();?>/assets/images/01_top_page/izumo-hospital.png" alt="出雲市民病院" />
+          <img src="<?php echo get_template_directory_uri();?>/assets/images/05_nurse/izumo-hospital.png" alt="出雲市民病院" />
         </div>
         <div class="p-nurse-sidebar__item-text-wrap">
           <p>出雲市民病院</p>
@@ -51,7 +51,7 @@
       </li>
       <li class="p-nurse-sidebar__list-item">
         <div class="p-nurse-sidebar__item-wrap">
-          <img src="<?php echo get_template_directory_uri();?>/assets/images/05_nurse/hikawa-hospital.jpg" alt="斐川生協病院" />
+          <img src="<?php echo get_template_directory_uri();?>/assets/images/05_nurse/hikawa-hospital.png" alt="斐川生協病院" />
         </div>
         <div class="p-nurse-sidebar__item-text-wrap">
           <p>斐川生協病院</p>
