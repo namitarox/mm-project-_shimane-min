@@ -77,7 +77,7 @@
               <a href=<?php echo esc_url( home_url( '/doctor/#hospital-planning' ) ); ?>>┗企画</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/doctor/#doctor-support-center' ) ); ?>>┗学生サポート<br />
+              <a href=<?php echo esc_url( home_url( '/doctor/#doctor-support-center' ) ); ?>>┗医系学生サポート<br />
                 <span class="u-ml--12">センターの紹介</span>
               </a>
             </li>
@@ -96,7 +96,7 @@
               <a href=<?php echo esc_url( home_url( '/nurse/#nurse-introduction' ) ); ?>>┗各病院の紹介</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/nurse/#nurse-support-center' ) ); ?>>┗学生サポート<br /><span class="u-ml--12">センターの紹介</span></a>
+              <a href=<?php echo esc_url( home_url( '/nurse/#nurse-support-center' ) ); ?>>┗医系学生サポート<br /><span class="u-ml--12">センターの紹介</span></a>
             </li>
           </ul>
           <ul class="l-footer__nav-list">
