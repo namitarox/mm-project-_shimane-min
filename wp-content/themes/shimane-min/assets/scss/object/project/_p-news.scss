@@ -71,7 +71,7 @@
 
   &__top-img {
     height: 200px;
-    width: 400px;
+    width: 44%;
   }
 
   &__top-img--individual-page {
@@ -83,7 +83,7 @@
   &__top-text {
     line-height: 1.49;
     margin-left: 30px;
-    width: 420px;
+    width: calc(100% - 44% - 30px);
   }
 
   &__list {
