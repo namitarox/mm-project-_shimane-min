@@ -782,8 +782,8 @@ a:hover {
   text-decoration: underline;
 }
 .p-news__top-img {
-  height: 157px;
-  width: 312px;
+  height: 200px;
+  width: 400px;
 }
 .p-news__top-img--individual-page {
   height: 185px;
@@ -793,7 +793,7 @@ a:hover {
 .p-news__top-text {
   line-height: 1.49;
   margin-left: 30px;
-  width: 50%;
+  width: 420px;
 }
 .p-news__list {
   margin-top: 20px;
