@@ -1,0 +1,8 @@
+.p-sidebar-contents {
+  background-color: $white;
+  padding: 10px;
+  width: 100%;
+}
+.p-sidebar-contents + .p-sidebar-contents {
+  margin-top: 20px;
+}

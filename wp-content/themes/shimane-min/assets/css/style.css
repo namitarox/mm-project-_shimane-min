@@ -1024,10 +1024,14 @@ a:hover {
   line-height: 1.74;
 }
 
-.p-facebook {
+.p-sidebar-contents {
   background-color: #fff;
   padding: 10px;
   width: 100%;
+}
+
+.p-sidebar-contents + .p-sidebar-contents {
+  margin-top: 20px;
 }
 
 .p-line {

@@ -1,5 +1,5 @@
 <aside class="l-sidebar">
-  <div class="p-facebook c-box--shadow">
+  <div class="p-sidebar-contents c-box--shadow">
     <div id="fb-root"></div>
     <script>
     (function(d, s, id) {
@@ -18,6 +18,9 @@
         <a href="https://www.facebook.com/サポセン-島根-301341763568857/">サポセン 島根</a>
       </blockquote>
     </div>
+  </div>
+  <div class="p-sidebar-contents c-box--shadow">
+
   </div>
   <div class="p-line c-box--shadow" id="line">
     <div class="p-line__qr-code">
