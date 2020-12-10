@@ -9,8 +9,11 @@
       <img src="<?php echo get_template_directory_uri();?>/assets/images/common/news-thumbnail.png" alt="詳しくは記事をご覧ください" />
       <?php endif; ?>
     </div>
-    <p class="p-news__top-text">
-      <?php limitCharacter($post, 150); ?>
-    </p>
+    <div class="p-news__top-text-wrap">
+      <h3 class="p-news__top-title"><?php the_title(); ?></h3>
+      <p class="p-news__top-text">
+        <?php limitCharacter($post, 150); ?>
+      </p>
+    </div>
   </a>
 </div>

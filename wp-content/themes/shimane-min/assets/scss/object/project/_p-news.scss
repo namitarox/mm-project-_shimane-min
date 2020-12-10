@@ -58,6 +58,7 @@
   }
 
   &__top-inner {
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -80,10 +81,18 @@
     width: 40%;
   }
 
-  &__top-text {
+  &__top-text-wrap {
     line-height: 1.49;
     margin-left: 30px;
     width: calc(100% - 44% - 30px);
+  }
+
+  &__top-title {
+    font-size: 20px;
+  }
+
+  &__top-text {
+    margin-top: 20px;
   }
 
   &__list {

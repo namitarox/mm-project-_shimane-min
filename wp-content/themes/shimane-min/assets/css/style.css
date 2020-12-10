@@ -772,6 +772,7 @@ a:hover {
   width: 96%;
 }
 .p-news__top-inner {
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,10 +791,16 @@ a:hover {
   object-fit: cover;
   width: 40%;
 }
-.p-news__top-text {
+.p-news__top-text-wrap {
   line-height: 1.49;
   margin-left: 30px;
   width: calc(100% - 44% - 30px);
+}
+.p-news__top-title {
+  font-size: 20px;
+}
+.p-news__top-text {
+  margin-top: 20px;
 }
 .p-news__list {
   margin-top: 20px;
