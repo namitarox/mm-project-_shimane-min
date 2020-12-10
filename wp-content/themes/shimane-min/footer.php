@@ -1,6 +1,6 @@
 <div class="p-page-top js-page-top">
   <a href="#">
-    <img src="<?php echo get_template_directory_uri();?>/assets/images/01_top_page/scroll-up.png" alt="ページトップへ" />
+    <img src="<?php echo get_template_directory_uri();?>/assets/images/common/scroll-up.png" alt="ページトップへ" />
   </a>
 </div>
 <footer class="l-footer">
