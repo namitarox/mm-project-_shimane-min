@@ -13,14 +13,15 @@
     })
     (document, "script", "facebook-jssdk");
     </script>
-    <div class="fb-page" data-href="https://www.facebook.com/サポセン-島根-301341763568857/" data-tabs="timeline" data-width="240" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+    <div class="fb-page" data-href="https://www.facebook.com/サポセン-島根-301341763568857/" data-tabs="timeline" data-width="260" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
       <blockquote cite="https://www.facebook.com/サポセン-島根-301341763568857/" class="fb-xfbml-parse-ignore">
         <a href="https://www.facebook.com/サポセン-島根-301341763568857/">サポセン 島根</a>
       </blockquote>
     </div>
   </div>
   <div class="p-sidebar-contents c-box--shadow">
-
+    <a class="twitter-timeline" data-lang="ja" data-width="260" data-height="520" data-dnt="true" data-theme="light" href="https://twitter.com/shimaneigakusei?ref_src=twsrc%5Etfw">Tweets by shimaneigakusei</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   <div class="p-line c-box--shadow" id="line">
     <div class="p-line__qr-code">
