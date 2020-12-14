@@ -72,7 +72,7 @@
     height: 60px;
   }
 
-  &__nav-item:nth-of-type(n + 3) {
+  &__nav-item:not(:first-of-type) {
     border-left: 1px solid $grey;
   }
 
@@ -88,24 +88,6 @@
     -ms-flex-pack: center;
     height: 45px;
     justify-content: center;
-    width: 160px;
-  }
-
-  &__nav-link--primary {
-    align-items: center;
-    background-color: $green;
-    border-radius: 5px;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;
-    color: $white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    -ms-flex-pack: center;
-    height: 60px;
-    justify-content: center;
-    padding: 0 40px;
     width: 160px;
   }
 }
