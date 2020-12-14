@@ -3,7 +3,7 @@
   <main class="l-main--individual-page c-box--shadow">
     <div class="p-pages-first-view p-pages-first-view--scholarship">
       <h2 class="p-pages-first-view__heading p-pages-first-view__heading--scholarship">
-        学びと安心を<br />
+        「学びと安心を」<br>
         挑戦するあなたへ
       </h2>
     </div>
