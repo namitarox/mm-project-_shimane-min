@@ -771,29 +771,42 @@ a:hover {
   margin: 20px auto 0;
   width: 96%;
 }
+.p-news__top-item.front-page {
+  width: 100%;
+}
 .p-news__top-inner {
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
-.p-news__top-inner:hover .p-news__top-text {
+.p-news__top-inner:hover .p-news__top-text, .p-news__top-inner:hover .p-news__top-title {
   color: #20b97b;
   text-decoration: underline;
 }
 .p-news__top-img {
-  height: 157px;
-  width: 312px;
-}
-.p-news__top-img--individual-page {
-  height: 185px;
+  height: 200px;
   object-fit: cover;
-  width: 40%;
+  width: 400px;
 }
-.p-news__top-text {
+.p-news__top-img.front-page {
+  height: 175px;
+  width: 350px;
+}
+.p-news__top-text-wrap {
   line-height: 1.49;
   margin-left: 30px;
-  width: 50%;
+  width: calc(100% - 400px - 30px);
+}
+.p-news__top-text-wrap.front-page {
+  width: calc(100% - 350px - 30px);
+}
+.p-news__top-title {
+  font-size: 20px;
+}
+.p-news__top-text {
+  margin-top: 20px;
 }
 .p-news__list {
   margin-top: 20px;
@@ -868,40 +881,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
   margin-top: 15px;
   padding-top: 15px;
-}
-.p-news__sns-item {
-  border-radius: 5px;
-  margin: 0 0 0 auto;
-}
-.p-news__sns-item a {
-  align-items: center;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-  font-size: 11px;
-  height: 20px;
-  justify-content: center;
-  min-width: 90px;
-  width: 100%;
-}
-.p-news__sns-item + .p-news__sns-item {
-  margin-left: 20px;
-}
-.p-news__sns-item--twitter {
-  background-color: #1c95e0;
-}
-.p-news__sns-item--facebook {
-  background-color: #1b77f2;
-}
-.p-news__sns-item--hatena {
-  background-color: #1c95e0;
 }
 
 .p-about {
@@ -1024,10 +1006,13 @@ a:hover {
   line-height: 1.74;
 }
 
-.p-facebook {
+.p-sidebar-contents {
   background-color: #fff;
-  padding: 10px;
   width: 100%;
+}
+
+.p-sidebar-contents + .p-sidebar-contents {
+  margin-top: 20px;
 }
 
 .p-line {
@@ -1106,8 +1091,10 @@ a:hover {
   top: 40px;
 }
 .p-pages-first-view__heading--dentist {
-  bottom: 20px;
+  bottom: 65px;
+  color: #000;
   left: 30px;
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
 }
 .p-pages-first-view__heading--student {
   left: 492px;

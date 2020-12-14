@@ -20,14 +20,22 @@
         ?>
       </p>
       <p class="p-news__back"><a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ一覧へ戻る<i class="fas fa-arrow-right fa-fw p-news__back-icon"></i></a></p>
-      <ul class="p-news__sns-list">
-        <li class="p-news__sns-item p-news__sns-item--twitter">
-          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-fw"></i><span>ツイート</span></a>
-        </li>
-        <li class="p-news__sns-item p-news__sns-item--facebook">
-          <a href="https://www.facebook.com/" target="_blank"><i class="fas fa-thumbs-up"></i><span>いいね!</span></a>
-        </li>
-      </ul>
+      <div class="p-news__sns-list">
+        <div class="ninja_onebutton">
+          <script type="text/javascript">
+          //<![CDATA[
+          (function(d) {
+            if (typeof(window.NINJA_CO_JP_ONETAG_BUTTON_29dea5663d7f9ae6c6b605b81ac7698f) == 'undefined') {
+              document.write("<sc" + "ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/29dea5663d7f9ae6c6b605b81ac7698f'><\/sc" + "ript>");
+            } else {
+              window.NINJA_CO_JP_ONETAG_BUTTON_29dea5663d7f9ae6c6b605b81ac7698f.ONETAGButton_Load();
+            }
+          })(document);
+          //]]>
+          </script>
+          <span class="ninja_onebutton_hidden" style="display:none;"><?php the_permalink(); ?></span><span style="display:none;" class="ninja_onebutton_hidden"><?php the_title(); ?></span>
+        </div>
+      </div>
     </section>
   </main>
   <?php get_sidebar("news"); ?>

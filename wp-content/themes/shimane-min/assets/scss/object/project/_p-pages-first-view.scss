@@ -47,8 +47,10 @@
   }
 
   &__heading--dentist {
-    bottom: 20px;
+    bottom: 65px;
+    color: #000;
     left: 30px;
+    text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
   }
 
   &__heading--student {

@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: student
-*/
-?>
-
 <?php get_header(); ?>
 <div class="l-wrapper l-wrapper--student">
   <main class="l-main--individual-page">
@@ -17,7 +11,7 @@ Template Name: student
         <div class="p-news__heading-area">
           <h2 class="p-news__heading">お知らせ</h2>
           <p>
-            <a href="<?php echo esc_url( home_url( '/news' ) ); ?>" class="p-news__button c-button">お知らせ一覧
+            <a href="<?php echo esc_url( home_url( '/category/student' ) ); ?>" class="p-news__button c-button">お知らせ一覧
           </a>
         </p>
         </div>

@@ -1,6 +1,6 @@
 <div class="p-page-top js-page-top">
-  <a href="">
-    <img src="<?php echo get_template_directory_uri();?>/assets/images/01_top_page/scroll-up.png" alt="ページトップへ" />
+  <a href="#">
+    <img src="<?php echo get_template_directory_uri();?>/assets/images/common/scroll-up.png" alt="ページトップへ" />
   </a>
 </div>
 <footer class="l-footer">
@@ -77,7 +77,7 @@
               <a href=<?php echo esc_url( home_url( '/doctor/#hospital-planning' ) ); ?>>┗企画</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/doctor/#doctor-support-center' ) ); ?>>┗学生サポート<br />
+              <a href=<?php echo esc_url( home_url( '/doctor/#doctor-support-center' ) ); ?>>┗医系学生サポート<br />
                 <span class="u-ml--12">センターの紹介</span>
               </a>
             </li>
@@ -96,7 +96,7 @@
               <a href=<?php echo esc_url( home_url( '/nurse/#nurse-introduction' ) ); ?>>┗各病院の紹介</a>
             </li>
             <li class="l-footer__nav-item">
-              <a href=<?php echo esc_url( home_url( '/nurse/#nurse-support-center' ) ); ?>>┗学生サポート<br /><span class="u-ml--12">センターの紹介</span></a>
+              <a href=<?php echo esc_url( home_url( '/nurse/#nurse-support-center' ) ); ?>>┗医系学生サポート<br /><span class="u-ml--12">センターの紹介</span></a>
             </li>
           </ul>
           <ul class="l-footer__nav-list">
@@ -124,7 +124,7 @@
             <a href="https://www.facebook.com/%E3%82%B5%E3%83%9D%E3%82%BB%E3%83%B3-%E5%B3%B6%E6%A0%B9-301341763568857/?ref=nf&hc_ref=ARTlX5sw9ToG1-uRwKOL9ew_zyCW-AobypbTjlkv-WZ5ztTBdPFyVi89MHCKrwCGz_4" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a>
           </li>
           <li class="l-footer__sns-icon">
-            <a href="./index.html#line"><img src="<?php echo get_template_directory_uri();?>/assets/images/01_top_page/LINE.png" alt="LINE" /></a>
+            <a href=<?php echo esc_url( home_url( '/#line' ) ); ?>><img src="<?php echo get_template_directory_uri();?>/assets/images/01_top_page/LINE.png" alt="LINE" /></a>
           </li>
         </ul>
       </div>

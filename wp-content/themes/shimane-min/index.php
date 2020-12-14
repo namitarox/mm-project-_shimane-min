@@ -42,7 +42,7 @@
     <div class="p-about c-box--shadow" id="top-about">
       <h2 class="c-heading--border-bottom">島根民医連について</h2>
       <p class="p-about__summary">
-            民医連とは、民主医療機関連合会の略称で、1953年に戦後の飢餓と伝染病が蔓延する中、医療に恵まれない人々と医療従事者が手を携えてつくられた各地の民主医療所の連合体のことを言います。<br />
+            民医連は、正式名称を民主医療機関連合会といい、1953年に結成された全国組織です。戦後、医療に恵まれない人々の要求にこたえようと、地域住民と医療従事者が手をたずさえ、民主的な医療機関が各地につくられたことがはじまりです。<br>
             　島根では、全国に先駆けて、1950年に松江大衆診療所が開設され、島根民医連の歴史が始まりました。それから70年以上、いのちの平等を掲げ、地域の人々の声を大切にし、患者さんの立場に立った医療を実践してきました。現在、島根県東部の救急医療から在宅まで総合的な医療・福祉活動を展開しています。
           </p>
       <section class="p-platform" id="platform">
@@ -86,10 +86,10 @@
               <th class="p-summary__table-title">連絡先</th>
               <td class="p-summary__table-content">
                 <address>
-                  ○本部<br />
+                  ○事務局<br />
                   〒690-0017 松江市西津田8-8-10<br />
                   TEL. 0852-31-3360<br />
-                  ○学生サポートセンター<br />
+                  ○医系学生サポートセンター<br />
                   〒693-0024 出雲市塩冶町神前1-6-2<br />
                   TEL. 0853-21-3360
                 </address>
@@ -104,7 +104,7 @@
               <th class="p-summary__table-title">アクセス</th>
               <td class="p-summary__table-content">
                 <div class="p-summary__map">
-                  <p>○本部</p>
+                  <p>○事務局</p>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3250.0297603448075!2d133.06597681555846!3d35.454057650004096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5p2-5rGf5biC6KW_5rSl55Sw55S6OC04LTEw!5e0!3m2!1sja!2sus!4v1450997925730" allowfullscreen></iframe>
                   <p class="u-mt--10">
                     <a
@@ -115,7 +115,7 @@
                   </p>
                 </div>
                 <div class="p-summary__map">
-                  <p>○学生サポートセンター</p>
+                  <p>○医系学生サポートセンター</p>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.2498408120737!2d132.75059351524988!3d35.34944548027299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35574464b87368e3%3A0x48699da68fce7525!2z5bO25qC55rCR5Li75Yy755mC5qmf6Zai6YCj5ZCI5Lya5Ye66Zuy5YiG5a6k!5e0!3m2!1sja!2sus!4v1450998005143" allowfullscreen></iframe>
                   <p class="u-mt--10">
                     <a
@@ -125,9 +125,9 @@
                   </p>
                 </div>
                 <p class="p-summary__text">
-                      島根民医連出雲学生サポートセンターは島根大学正門から歩いて5分の位置にあります。<br />
-                      常駐職員もいますのでぜひお気軽にお越しください。
-                    </p>
+                  島根民医連医系学生サポートセンターは島根大学正門から歩いて3分の位置にあります。<br>
+                  職員不在のときもございますので、ご連絡の上、お越しください。
+                </p>
               </td>
             </tr>
           </tbody>

@@ -12,7 +12,7 @@
         <div class="p-news__heading-area">
           <h2 class="p-news__heading">お知らせ</h2>
           <p>
-          <a href="<?php echo esc_url( home_url( '/news' ) ); ?>" class="p-news__button c-button">お知らせ一覧</a>
+          <a href="<?php echo esc_url( home_url( '/category/nurse' ) ); ?>" class="p-news__button c-button">お知らせ一覧</a>
         </p>
         </div>
         <?php
@@ -49,7 +49,7 @@
           </li>
           <li class="p-hospital-introduction__list-item">
             <iframe class="p-hospital-introduction__video" src="https://www.youtube.com/embed/MU6K0E2kjq0?rel=0&amp;showinfo=0" allowfullscreen="allowfullscreen"></iframe>
-            <p class="p-hospital-introduction__video-title">出雲医療生協</p>
+            <p class="p-hospital-introduction__video-title">出雲市民病院</p>
           </li>
           <li class="p-hospital-introduction__list-item">
             <iframe class="p-hospital-introduction__video" src="https://www.youtube.com/embed/wlKuBlwRnp0?rel=0&amp;showinfo=0" allowfullscreen="allowfullscreen"></iframe>
@@ -58,9 +58,9 @@
         </ul>
       </section>
       <section class="p-support-center--nurse-page c-box--shadow" id="nurse-support-center">
-        <h3 class="c-heading--border-left">学生医サポートセンターの紹介</h3>
+        <h3 class="c-heading--border-left">医系学生サポートセンターの紹介</h3>
         <p class="p-support-center__text">
-          サポートセンターは医系学生が自由に活用できる交流スペースです。コピー機や図書コーナーを利用できます。２階には休息、テスト勉強、打ち合わせ等に使用できる部屋があります。
+          医系学生サポートセンターは医系学生が自由に活用できる交流スペースです。コピー機や図書コーナーを利用できます。２階には休息、テスト勉強、打ち合わせ等に使用できる部屋があります。
         </p>
         <ul class="p-hospital-list--nurse-page u-mt--40">
           <li class="p-hospital-list__item--nurse-page">

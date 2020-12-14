@@ -27,7 +27,7 @@ $(function () {
     });
 
     $pageTop.click(function () {
-      $("body, html").animate({ scrollTop: 0 }, 500);
+      $("body, html").animate({ scrollTop: 0 }, 1000);
     });
   };
 
