@@ -3,7 +3,7 @@
   <main class="l-main--individual-page c-box--shadow">
     <div class="p-pages-first-view p-pages-first-view--scholarship">
       <h2 class="p-pages-first-view__heading p-pages-first-view__heading--scholarship">
-        学びと安心を<br />
+        「学びと安心を」<br>
         挑戦するあなたへ
       </h2>
     </div>
@@ -11,7 +11,7 @@
       <h2 class="c-heading--border-bottom">奨学金をお考えのあなたへ</h2>
       <div class="p-scholarship-lead">
         <div class="p-scholarship-lead__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/images/02_scholarship/scholarship-message.JPG" alt="島根民医連会長 松江生協病院副院長 眞木高之" />
+          <img src="<?php echo get_template_directory_uri();?>/assets/images/02_scholarship/scholarship-message.png" alt="島根民医連会長 松江生協病院副院長 眞木高之" />
         </div>
         <div class="p-scholarship-lead__text-wrap">
           <p>
