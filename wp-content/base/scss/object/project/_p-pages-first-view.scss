@@ -6,23 +6,23 @@
   position: relative;
 
   &--scholarship {
-    background-image: url(/wp-content/base/images/02_scholarship/scholarship-first-view.jpg);
+    background-image: url(../images/02_scholarship/scholarship-first-view.jpg);
   }
 
   &--doctor {
-    background-image: url(/wp-content/base/images/03_doctor/doctor-first-view.jpg);
+    background-image: url(../images/03_doctor/doctor-first-view.jpg);
   }
 
   &--dentist {
-    background-image: url(/wp-content/base/images/04_dentist/dentist-first-view.jpg);
+    background-image: url(../images/04_dentist/dentist-first-view.jpg);
   }
 
   &--student {
-    background-image: url(/wp-content/base/images/06_high-school/high-school-first-view.jpg);
+    background-image: url(../images/06_high-school/high-school-first-view.jpg);
   }
 
   &--nurse {
-    background-image: url(/wp-content/base/images/05_nurse/nurse-first-view.jpg);
+    background-image: url(../images/05_nurse/nurse-first-view.jpg);
   }
 
   &__heading {
@@ -37,8 +37,8 @@
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
   &__heading--doctor {
