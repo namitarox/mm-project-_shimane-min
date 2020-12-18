@@ -51,14 +51,14 @@
   }
 
   &__nav-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   &__nav-list {
     line-height: 1.5;
+    width: 25%;
   }
 
   &__nav-item {
