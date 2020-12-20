@@ -32,10 +32,21 @@
   }
 
   &__item-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 1.8fr 1fr;
-    grid-template-columns: 2fr 1.8fr 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     line-height: 1.74;
+  }
+
+  &__item:first-of-type {
+    width: 42%;
+  }
+
+  &__item:nth-of-type(n + 2) {
+    width: 38%;
+  }
+
+  &__item:last-of-type {
+    width: 20%;
   }
 }
